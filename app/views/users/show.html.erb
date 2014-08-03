@@ -9,7 +9,9 @@
 </p>
 
 <h2>My Trips</h2>
-
+<div class="new-entry-link">
+<%= render "layouts/new" %>
+</div>
 
 <% if @user.trips.length == 0 %>
 <h2>You haven't planned any trips yet.</h2>

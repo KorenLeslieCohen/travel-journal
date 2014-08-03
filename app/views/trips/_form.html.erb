@@ -1,3 +1,4 @@
+<div class="new-journal-form">
 <%= form_for(@trip) do |f| %>
   <% if @trip.errors.any? %>
     <div id="error_explanation">
@@ -12,31 +13,29 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :trip_name %><br>
+    <%= f.label :trip_name %>
     <%= f.text_field :trip_name %>
   </div>
   <div class="field">
-    <%= f.label :location %><br>
+    <%= f.label :location %>
     <%= f.text_field :location %>
   </div>
-<!--   <div class="field"> -->
-    <%#= f.label :user_id %><br>
-    <%#= f.number_field :user_id %>
-<!--   </div> -->
 <div class="field">
-  <%= f.hidden_field :user_id, :value => session["user_id"] %>
-    <%= f.label :to_pack %><br>
+    <%= f.label :to_pack %>
     <%= f.text_area :to_pack %>
   </div>
   <div class="field">
-    <%= f.label :to_do %><br>
+    <%= f.label :to_do %>
     <%= f.text_area :to_do %>
   </div>
   <div class="field">
-    <%= f.label :budget %><br>
+    <%= f.label :budget %>
     <%= f.number_field :budget %>
+      <%= f.hidden_field :user_id, :value => session["user_id"] %>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+
+</div>

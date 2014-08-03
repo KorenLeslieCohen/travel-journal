@@ -1,4 +1,4 @@
-
+<div class="new-journal-form">
 <%= form_for Trip.new, url: "/trips" do |f| %>
   <% if Trip.new.errors.any? %>
     <div id="error_explanation">
@@ -11,35 +11,38 @@
       </ul>
     </div>
   <% end %>
-
+<h1>New Journal Entry</h1>
 
 
   <div class="field">
-    <%= f.label :trip_name %><br>
+    <%= f.label :trip_name, "JOURNAL ENTRY NAME" %><br>
     <%= f.text_field :trip_name %>
   </div>
   <div class="field">
-    <%= f.label :location %><br>
+    <%= f.label :location, "TRIP LOCATION(S)" %><br>
     <%= f.text_field :location %>
   </div>
 <!--   <div class="field"> -->
-    <%#= f.label :user_id %><br>
+    <%#= f.label :user_id %>
     <%#= f.number_field :user_id %>
 <!--   </div> -->
 <div class="field">
-  <%= f.hidden_field :user_id, :value => session["user_id"] %>
-    <%= f.label :to_pack %><br>
+ 
+    <%= f.label :to_pack, "CAN'T FORGET TO PACK" %><br>
     <%= f.text_area :to_pack %>
   </div>
   <div class="field">
-    <%= f.label :to_do %><br>
+    <%= f.label :to_do, "THINGS I WANT TO DO" %><br>
     <%= f.text_area :to_do %>
   </div>
   <div class="field">
-    <%= f.label :budget %><br>
+    <%= f.label :budget, "TRIP BUDGET" %><br>
     <%= f.number_field :budget %>
+     <%= f.hidden_field :user_id, :value => session["user_id"] %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="actions" class="submit">
+    <%= f.submit "ADD TO JOURNAL" %>
   </div>
 <% end %>
+
+</div>

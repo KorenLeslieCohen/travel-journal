@@ -2,7 +2,7 @@
 <center>
   <div id="index-cover" class="index-cover">
 <div id="none">
-<p>.</p>
+<p><span>.</span></p>
 </div>
     <br><br>
         <br><br>
@@ -15,7 +15,7 @@
     <br><br>
     <br><br>
     <% if !current_user %>
-      <a href="/auth/facebook">Log in with Facebook</a>
+      <a href="/auth/facebook"><%= image_tag "facebook.png", width: "200"%></a>
       <% else %>
       <p><%= link_to "Welcome back, #{current_user.name.split(" ")[0]}!", current_user %></p>
       <p>Happy travels!</p>
