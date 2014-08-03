@@ -371,14 +371,14 @@ label,
   /*background-image: image-url("sjds.jpg");*/
   /*background-image: cover;*/
 
-  background: -webkit-linear-gradient(black, purple, blue, green); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(black, purple, blue, green); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(black, purple, blue, green); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(black, purple, blue, green); /* Standard syntax */
+  background: -webkit-linear-gradient(black, #ed1144, green, grey); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(black, #ed1144, green, grey); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(black, #ed1144, green, grey); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(black, #ed1144, green, grey); /* Standard syntax */
 
   z-index: 99999;
   opacity:0;
-  transition-duration: 1.3s;
+  transition-duration: 1.6s;
   transition-property: opacity;
 /*  -webkit-transition: opacity 400ms ease-in;
   -moz-transition: opacity 400ms ease-in;
@@ -390,7 +390,7 @@ label,
 .modalDialog:target {
   opacity: 1;
   pointer-events: auto;
-  transition-duration: 1.3s;
+  transition-duration: 1.6s;
 }
 
 .modalDialog > .modal-box {
