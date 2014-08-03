@@ -1,17 +1,27 @@
 <header>
   <center>
-  <div id="index-cover">
+  <div id="index-cover" class="index-cover">
     <h1>Travel App</span>NY</h1>
     <h2>Tagline!</h2>
+   
     <br><br>
     <br><br>
     <br><br>
     <% if !current_user %>
       <a href="/auth/facebook">Log in with Facebook</a>
+      <% else %>
+      <p><%= "Welcome back, #{current_user.name.split(" ")[0]}!" %><br>Happy travels!</p>
     <% end %>
-  </div>
-  <br>
-  <br>
-  <br>
+     </div>
+<div class="divider">
+<h1>Quote</h1>
+</div>   
+<div class="index-description">
+</div>
+<div class="divider">
+<h1>Quote</h1>
+</div> 
+<div class="index-authors">
+</div>
   </center>
 </header>

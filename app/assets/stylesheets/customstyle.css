@@ -1,0 +1,202 @@
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Comfortaa);
+
+/*ACCORDION CALCULATOR*/
+h1, h2 {
+  font-family: 'Coming Soon';
+  font-size: 40px;
+  color: #ed1144;
+}
+
+h1 {
+  padding-top: 20px;
+}
+#accordion,
+#accordion ul,
+#accordion li,
+#accordion a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  font-weight: normal;
+  text-decoration: none;
+  line-height: 1;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  position: relative;
+}
+#accordion a {
+  line-height: 2.5;
+}
+
+#accordion {
+  max-width: 600px;
+}
+#accordion > ul > li > a {
+  /*padding-right: 40px;*/
+  font-size: 25px;
+  font-weight: bold;
+  display: block;
+  /*background: #bd0e36;*/
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  text-transform: uppercase;
+  /*position: relative;*/
+}
+#accordion > ul > li > a > span {
+  background: #ed1144;
+  padding: 10px;
+  display: block;
+  font-size: 13px;
+  font-weight: 300;
+}
+#accordion > ul > li > a:hover {
+  text-decoration: none;
+}
+#accordion > ul > li.active {
+  border-bottom: none;
+}
+#accordion > ul > li.active > a {
+  color: #fff;
+}
+
+/*is this being used for anything?*/
+#accordion > ul > li.active > a span {
+  background: #bd0e36;
+}
+
+#accordion ul ul {
+  display: none;
+}
+#accordion ul ul li {
+  border: 1px solid #e0e0e0;
+  border-top: 0;
+}
+#accordion ul ul a {
+  padding: 10px;
+  display: block;
+  color: #ed1144;
+  font-size: 13px;
+}
+#accordion ul ul a:hover {
+  color: #bd0e36;
+}
+#accordion ul ul li.odd {
+  background: #f4f4f4;
+}
+#accordion ul ul li.even {
+  background: #fff;
+}
+
+#submit,
+#reset {
+  padding: 10px;
+  margin-top: 20px;
+  color: #ed1144;
+  background: white;
+  font-size: 15px;
+  border: 1px solid black;
+}
+
+/*body {
+  background: black;
+}*/
+
+.calc-body {
+  border: 2px solid #ed1144;
+  max-width: 700px;
+  margin-top: 50px;
+  background: white;
+}
+
+/*APPLICATION*/
+
+html,
+body, 
+header {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  background: white;
+  border-color: white;
+/*  font-family: 'Gloria Hallelujah';
+  color: #ed1144;*/
+}
+
+.nav a,
+.nav a:visited,
+.active a,
+.active a:visited,
+.navbar-nav a,
+.navbar-nav a:visited,
+.navbar-header
+/*.navbar li a */{
+  font-family: 'Comfortaa';
+  font-size: 20px;
+  color: #ed1144;
+}
+
+a,
+a:visited {
+    color: #ed1144;
+    text-decoration: none;
+    background: none;
+}
+
+a:hover {
+  text-decoration: none;
+  background: none;
+}
+
+.nav a:hover,
+.active a:hover,
+.navbar-nav a:hover, {
+    color: #ed1144;
+}
+
+
+
+.navbar img {
+  border-radius: 50px;
+}
+ 
+.navbar-default .navbar-nav > li > a {
+    color: #ed1144;
+}
+
+
+.divider {
+  height: 300px;
+}
+
+.index-cover {
+  height: 500px;
+  background: black;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+.index-cover,
+#index-cover {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.index-description {
+  height: 400px;
+  background: black;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.index-authors {
+  height: 400px;
+  background: black;
+  background-attachment: fixed;
+  background-size: cover;
+}
