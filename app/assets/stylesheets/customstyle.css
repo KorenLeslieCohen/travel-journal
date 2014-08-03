@@ -119,11 +119,12 @@ h1 {
 .calc-body {
   /*border: 2px solid #ed1144;*/
   max-width: 700px;
-  margin-top: 50px;
+  margin-top: 30px;
 
 }
 
-.calc-body h1 {
+.calc-body h1,
+.user-trips h1 {
     font-family: 'Lobster Two';
     color: white;
 }
@@ -133,9 +134,9 @@ h1 {
     color: white;
 }
 
-input {
+/*input {
   padding: 5px;
-}
+}*/
 
 /*APPLICATION*/
 
@@ -175,7 +176,7 @@ header {
 .navbar-header
 /*.navbar li a */{
   font-family: 'Open Sans';
-  font-size: 15px;
+  font-size: 13px;
 }
 
 a,
@@ -220,7 +221,7 @@ a:hover {
   background: black;
   background-attachment: fixed;
   background-size: cover;
-  background-image: image-url("sjds.jpg");
+  background-image: image-url("thailand1.jpg");
 
 }
 
@@ -242,8 +243,10 @@ a:hover {
   font-size: 100px;
 }
 
-.index-cover h2 {
+.index-cover h2, 
+.user-trips h2  {
   font-family: 'Josefin Sans';
+  color: white;
 }
 
 .index-description {
@@ -282,11 +285,16 @@ a:hover {
 }
 
 .user-trips {
-height: 100vh;
+/*height: 100vh;*/
+/*height: 100%;*/
   background-size: cover;
-  
-       background-image: image-url("carta.jpg");
+  height: 100%;
+       background-image: image-url("thailand2.jpg");
 }
+
+/*.user-trips #accordion a {
+  line-height: 1;
+}*/
 
 .show-trip {
   height: 100vh;
@@ -296,8 +304,88 @@ height: 100vh;
 }
 
 .navbar-default .navbar-brand {
-  color: white;
+  color: #ed1144;
   font-family: 'Lobster Two';
 }
+
+#notice {
+  color: white;
+  /*background: black;*/
+    background: rgb(237, 17, 68); /* Fall-back for browsers that don't support rgba */
+  background: rgba(237, 17, 68, .6);
+}
+
+#accordion p {
+  color: white;
+}
+
+/*.modal-trip {
+  opacity: 0;
+}
+
+.modal-trip:click {
+  opacity: 1;
+}*/
+
+.index-cover p {
+  color: white;
+  font-family: 'Open Sans';
+  font-size: 20px;
+}
+
+/*MODAL*/
+
+/* About Modal */
+.modalDialog {
+  position: fixed;
+  overflow: scroll;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #2b2d35;
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.modalDialog:target {
+  opacity:.9;
+  pointer-events: auto;
+}
+
+.modalDialog > .modal-box {
+  width: 50%;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 0px;
+  color: #fff;
+}
+
+.modalDialog h2, h3 {
+  color: #88b7b3;
+}
+
+.close {
+  color: #fff;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  font-size: 60px;
+  top: -20px;
+  width: 80px;
+  height: 80px;
+  text-decoration: none;
+}
+
+.close:hover { color: #88b7b3; }
+
 
 

@@ -41,7 +41,7 @@ class TripsController < ApplicationController
 
     respond_to do |format|
       if @trip.save
-        format.html { redirect_to @trip, notice: 'Trip was successfully created.' }
+        format.html { redirect_to current_user, notice: 'Trip was successfully created.' }
         format.json { render :show, status: :created, location: @trip }
       else
         format.html { render :new }
@@ -55,7 +55,7 @@ class TripsController < ApplicationController
   def update
     respond_to do |format|
       if @trip.update(trip_params)
-        format.html { redirect_to @trip, notice: 'Trip was successfully updated.' }
+        format.html { redirect_to current_user, notice: 'Trip was successfully updated.' }
         format.json { render :show, status: :ok, location: @trip }
       else
         format.html { render :edit }
@@ -69,7 +69,7 @@ class TripsController < ApplicationController
   def destroy
     if (logged_in? && trip_author?) 
       @trip.destroy
-      redirect_to root_url
+      redirect_to current_user
     else
       redirect_to root_url, :flash => { :error => "You can't delete someone else's trip!" }
     end

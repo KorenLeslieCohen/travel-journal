@@ -5,17 +5,85 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @user.name %>
+  <h1><%= @user.name %></h1>
 </p>
 
-<h2>My trips</h2>
+<h2>My Trips</h2>
 
-<% @user.trips.each do |trip| %>
-    <h2><%=link_to trip.trip_name, trip %></h2>
-<% end %>
 
-<%= link_to 'New Trip', new_trip_path %> |
+<% if @user.trips.length == 0 %>
+<h2>You haven't planned any trips yet.</h2>
+<!-- <h2> --><%#= link_to 'Plan First Trip', new_trip_path %> <!-- </h2> -->
+    <h2>  <%#= render "layouts/new" %> </h2>
+<br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<% else %>
+
 <%#= link_to 'Back', users_path %>
-</div>
+
+
+<div class="calc-body">
+<% @user.trips.each do |trip| %>
+
+<form id='accordion'>
+<ul>
+
+   <li><a><span><%= trip.trip_name  %></span></a>
+      <ul>
+       <li>
+
+       <p>
+  <h2>
+  <%= trip.trip_name %>
+</h2>
+
+<p>
+  <strong>Location:</strong><br>
+  <%= trip.location %>
+</p>
+
+
+
+<p>
+  <strong>To pack:</strong>
+  <%= trip.to_pack %>
+</p>
+
+<p>
+  <strong>To do:</strong>
+  <%= trip.to_do %>
+</p>
+
+<p>
+  <strong>Budget:</strong>
+  <%= trip.budget %>
+</p>
+
+<p>
+    <%= link_to 'Edit Trip', edit_trip_path(trip) %> | <%= link_to 'Delete Trip', trip_path(trip), method: :delete, data: { confirm: 'Are you sure?' } %>
+  </p>
+
+      </ul>
+    </li>
+
+   </ul>
+
+
+   <% end %>
+   </form>
+   </div>
+  <!--  <h2> --><%#= link_to 'New Trip', new_trip_path %> <!-- </h2> -->
+    <h2>  <%#= render "layouts/new" %> </h2>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <% end %>
+  
+
+
+
+
+   </div>
 </center>

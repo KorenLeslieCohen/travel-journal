@@ -11,9 +11,10 @@
     <ul class="nav navbar-nav">
       <% if current_user %>
       <li class="active">
-  <li><%= link_to "My Travel Journal", current_user %></li>
-  <li><%= link_to "New Journal Entry", new_trip_path %></li>
-   <li><%= link_to "Travel Calculator", "/calculator" %></li>
+  <li><%= link_to "MY TRAVEL JOURNAL", current_user %></li>
+  <!-- <li> --><%#= link_to "NEW JOURNAL ENTRY", new_trip_path %><!-- </li> -->
+  <li>  <%= render "layouts/new" %> </li>
+   <li><%= link_to "TRAVEL CALCULATOR", "/calculator" %></li>
   <% end %>
 
  <!--    <form class="navbar-form navbar-left">
@@ -23,11 +24,11 @@
 </ul>
     <ul class="nav navbar-nav navbar-right">
     <% if current_user %>
-<li><%= link_to "Happy travels, #{current_user.name.split(" ")[0]}!", current_user %></li>
+<li><%= link_to "HAPPY TRAVELS, #{current_user.name.split(" ")[0].upcase}!", current_user %></li>
   <li><%= image_tag current_user.image %></li>
-      <li><%= link_to "Log Out", logout_path %></li></li>
+      <li><%= link_to "LOG OUT", logout_path %></li></li>
     <% else %>
-    <li><%= link_to "Log in with Facebook", facebook_login_path %></li>
+    <li><%= link_to "LOG IN WITH FACEBOOK", facebook_login_path %></li>
 <% end %>
       <!-- <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>

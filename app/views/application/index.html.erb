@@ -17,17 +17,20 @@
     <% if !current_user %>
       <a href="/auth/facebook">Log in with Facebook</a>
       <% else %>
-      <p><%= "Welcome back, #{current_user.name.split(" ")[0]}!" %><br>Happy travels!</p>
+      <p><%= link_to "Welcome back, #{current_user.name.split(" ")[0]}!", current_user %></p>
+      <p>Happy travels!</p>
     <% end %>
      </div>
 <!-- <div class="divider">
 <h1>sadasd</h1>
 </div>   --> 
-<div class="index-description">
-</div>
-<!-- <div class="divider">
-<h1>uasdasdaSDote</h1>
-</div>  -->
-<div class="index-authors">
-</div>
-  </center>
+
+<!-- SECOND SECTION  -->
+<!-- <div class="index-description">
+<center> -->
+<!-- <div class="user-trips"> -->
+<!-- 
+
+<p id="notice"><%#= notice %></p> -->
+
+
