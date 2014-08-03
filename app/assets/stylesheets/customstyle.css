@@ -1,6 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
-@import url(http://fonts.googleapis.com/css?family=Comfortaa);
+@import url(http://fonts.googleapis.com/css?family=Lobster+Two);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
+
 
 /*ACCORDION CALCULATOR*/
 h1, h2 {
@@ -46,12 +48,18 @@ h1 {
   /*position: relative;*/
 }
 #accordion > ul > li > a > span {
-  background: #ed1144;
+  /*background: #ed1144;*/
   padding: 10px;
   display: block;
   font-size: 13px;
   font-weight: 300;
 }
+
+
+ /* background: rgb(231, 231, 231);*/ /* Fall-back for browsers that don't support rgba */
+ /* background: rgba(231, 231, 231, .8);*/
+
+
 #accordion > ul > li > a:hover {
   text-decoration: none;
 }
@@ -71,33 +79,37 @@ h1 {
   display: none;
 }
 #accordion ul ul li {
-  border: 1px solid #e0e0e0;
+  /*border: 1px solid #e0e0e0;*/
   border-top: 0;
 }
 #accordion ul ul a {
   padding: 10px;
   display: block;
-  color: #ed1144;
+  /*color: #ed1144;*/
+  color: white;
   font-size: 13px;
 }
 #accordion ul ul a:hover {
-  color: #bd0e36;
+  /*color: #bd0e36;*/
+  color: white;
 }
 #accordion ul ul li.odd {
-  background: #f4f4f4;
+  /*background: #f4f4f4;*/
+  /*opacity: .7;*/
 }
 #accordion ul ul li.even {
-  background: #fff;
+  /*background: #fff;*/
+  /*opacity: .7;*/
 }
 
 #submit,
 #reset {
   padding: 10px;
   margin-top: 20px;
-  color: #ed1144;
-  background: white;
+  color: white;
+  background: none;
   font-size: 15px;
-  border: 1px solid black;
+  border: 1px solid white;
 }
 
 /*body {
@@ -105,10 +117,24 @@ h1 {
 }*/
 
 .calc-body {
-  border: 2px solid #ed1144;
+  /*border: 2px solid #ed1144;*/
   max-width: 700px;
   margin-top: 50px;
-  background: white;
+
+}
+
+.calc-body h1 {
+    font-family: 'Lobster Two';
+    color: white;
+}
+
+.calc-body h2 {
+    font-family: 'Lobster Two';
+    color: white;
+}
+
+input {
+  padding: 5px;
 }
 
 /*APPLICATION*/
@@ -118,13 +144,26 @@ body,
 header {
   padding: 0;
   margin: 0;
+      /*height: 100%;*/
 }
 
 .navbar {
-  background: white;
-  border-color: white;
+  background: none;
+  border-color: none;
 /*  font-family: 'Gloria Hallelujah';
   color: #ed1144;*/
+  border-radius: 0;
+  border: 0px;
+}
+
+.nav,
+.navbar,
+.navbar-default,
+.navbar-collapse,
+.collapse,
+.navbar-responsive-collapse {
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .nav a,
@@ -135,9 +174,8 @@ header {
 .navbar-nav a:visited,
 .navbar-header
 /*.navbar li a */{
-  font-family: 'Comfortaa';
-  font-size: 20px;
-  color: #ed1144;
+  font-family: 'Open Sans';
+  font-size: 15px;
 }
 
 a,
@@ -165,19 +203,24 @@ a:hover {
 }
  
 .navbar-default .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
     color: #ed1144;
 }
 
 
-.divider {
-  height: 300px;
-}
+/*.divider {
+  height: 50px;
+}*/
 
 .index-cover {
-  height: 500px;
+  height: 750px;
   background: black;
   background-attachment: fixed;
   background-size: cover;
+  background-image: image-url("sjds.jpg");
 
 }
 
@@ -187,16 +230,74 @@ a:hover {
   margin-top: 0;
 }
 
+.index-cover h1,
+#index-cover h1,
+.index-cover h2,
+#index-cover h2 {
+  color: white;
+
+}
+.index-cover h1 {
+  font-family: 'Lobster Two';
+  font-size: 100px;
+}
+
+.index-cover h2 {
+  font-family: 'Josefin Sans';
+}
+
 .index-description {
-  height: 400px;
+  height: 750px;
   background: black;
   background-attachment: fixed;
   background-size: cover;
+    background-image: image-url("thailand2.jpg");
 }
 
 .index-authors {
-  height: 400px;
+  height: 750px;
   background: black;
   background-attachment: fixed;
   background-size: cover;
+      background-image: image-url("carta.jpg");
 }
+
+.calc {
+  /*height: 100vh;*/
+  background-size: cover;
+     background-image: image-url("sjds.jpg");
+     height: 1000px;
+}
+
+.new-trip {
+    height: 100vh;
+  background-size: cover;
+     background-image: image-url("market1.jpg");
+}
+
+.edit-trip {
+    height: 100vh;
+  background-size: cover;
+     background-image: image-url("thailand1.jpg");
+}
+
+.user-trips {
+height: 100vh;
+  background-size: cover;
+  
+       background-image: image-url("carta.jpg");
+}
+
+.show-trip {
+  height: 100vh;
+  background-size: cover;
+  
+       background-image: image-url("thailand2.jpg");
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+  font-family: 'Lobster Two';
+}
+
+

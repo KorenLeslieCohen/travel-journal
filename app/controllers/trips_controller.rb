@@ -29,7 +29,7 @@ class TripsController < ApplicationController
   def edit
     if !logged_in?
       redirect_to root_path, :flash => { :error => "Make sure you're logged in!" }
-    elsif !question_author?
+    elsif !trip_author?
       redirect_to root_url, :flash => { :error => "You can't edit someone else's trip!" }
     end
   end

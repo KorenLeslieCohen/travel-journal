@@ -1,4 +1,6 @@
+<div class="calc">
 <%= render 'layouts/header' %>
+
 <center>
 <div class="calc-body">
 <h1>Travel Calculator</h1>
@@ -17,6 +19,15 @@
        <li><a href='#'><span>Taxi/Shuttle to Airport/Station</span></a>$<input type="text" id="amount5" name="amount" placeholder="0"></li>
       </ul>
     </li>
+
+    <li><a href='#'><span>Logistics</span></a>
+   <ul>
+         <li><a href='#'><span>Passport and Visa Fees</span></a>$<input type="text" id="passports" name="amount" placeholder="0"></li>
+         <li><a href='#'><span>Travel Insurance</span></a>$<input type="text" id="insurance" name="amount" placeholder="0"></li>
+         <li><a href='#'><span>Luggage</span></a>$<input type="text" id="luggage" name="amount" placeholder="0"></li>
+         <li><a href='#'><span>Other</span></a>$<input type="text" id="other" name="amount" placeholder="0"></li>
+      </ul>
+   </li>
 
    <li><a href='#'><span>Accomodation</span></a>
       <ul>
@@ -39,19 +50,21 @@
       </ul>
    </li>
 
-    <li><a href='#'><span>Logistics</span></a>
+      <li><a href='#'><span>Calculate</span></a>
    <ul>
-         <li><a href='#'><span>Passport and Visa Fees</span></a>$<input type="text" id="passports" name="amount" placeholder="0"></li>
-         <li><a href='#'><span>Travel Insurance</span></a>$<input type="text" id="insurance" name="amount" placeholder="0"></li>
-         <li><a href='#'><span>Luggage</span></a>$<input type="text" id="luggage" name="amount" placeholder="0"></li>
-         <li><a href='#'><span>Other</span></a>$<input type="text" id="other" name="amount" placeholder="0"></li>
+      <!--    <li><a href='#'><span>Attractions (Entry Fees, Transport, Tours)</span></a>$<input type="text" id="attractions" name="amount" placeholder="0"></li>
+         <li><a href='#'><span>Shopping & Souvenirs</span></a>$<input type="text" id="shopping" name="amount" placeholder="0"></li> -->
+         <input id="submit" type="submit" value="Calculate">
+<input id="reset" type="reset" value="Start Over">
       </ul>
    </li>
 
+    
+
 </ul>
 
-<input id="submit" type="submit" value="Calculate">
-<input id="reset" type="reset" value="Start Over">
+<!-- <input id="submit" type="submit" value="Calculate">
+<input id="reset" type="reset" value="Start Over"> -->
 </form>
 <h2 id="total">The Damage: $0</h2>
 
@@ -60,3 +73,4 @@
   
 </div>
 </center>
+</div>
