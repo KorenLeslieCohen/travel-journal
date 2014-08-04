@@ -11,7 +11,9 @@
 <h2>My Trips</h2>
 <div class="new-entry-link">
 <%#= render "layouts/new" %>
-<%= render "layouts/new" %>
+
+ <%= render "layouts/calc" %>
+ <%= render "layouts/new" %>
 </div>
 
 <% if @user.trips.length == 0 %>

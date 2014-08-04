@@ -1,12 +1,18 @@
-<div class="calc-modal">
-<!-- <h1>Estimate Your Budget</h1> -->
+<a href="#openModal2">Estimate Trip Cost</a>
+<br>
+
+<div id="openModal2" class="modalDialog2">
+  <div class="modal-box2"><br>
+    <a href="#close" title="Close2" class="close2">CLOSE</a>
+    <div class="modal-text2">
+
 <div class="calc">
 
-<!-- <p>Estimate your trip expenses, then complete the form to create your trip!</p> -->
+
 <center>
 <div class="calc-body">
-<!-- <h1>Travel Calculator</h1> -->
-<!-- <form id='accordion'>
+<h1>Travel Calculator</h1>
+<form id='accordion'>
 <ul>
 
    <li><a><span>Travel Expenses</span></a>
@@ -53,22 +59,22 @@
    </li>
 
       <li><a><span>Calculate</span></a>
-   <ul> -->
+   <ul>
       <!--    <li><a href='#'><span>Attractions (Entry Fees, Transport, Tours)</span></a>$<input type="text" id="attractions" name="amount" placeholder="0"></li>
          <li><a href='#'><span>Shopping & Souvenirs</span></a>$<input type="text" id="shopping" name="amount" placeholder="0"></li> -->
-        <!--  <input id="submit" type="submit" value="Calculate">
+         <input id="submit" type="submit" value="Calculate">
 <input id="reset" type="reset" value="Start Over">
       </ul>
    </li>
 
     
 
-</ul> -->
+</ul>
 
 <!-- <input id="submit" type="submit" value="Calculate">
 <input id="reset" type="reset" value="Start Over"> -->
-<!-- </form>
-<h1 id="total">Estimated budget: $0</h1> -->
+</form>
+<h2 id="total">The Damage: $0</h2>
 
 
 
@@ -76,61 +82,8 @@
 </div>
 </center>
 </div>
-<!--  <h1>&hearts;</h1> -->
 
-<h1>New Journal Entry</h1>
-<p>Complete the form to create a new travel journal entry!</p>
-<div class="new-journal-form">
-<%= form_for Trip.new, url: "/trips" do |f| %>
-  <% if Trip.new.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(Trip.new.errors.count, "error") %> prohibited this trip from being saved:</h2>
 
-      <ul>
-      <% current_user.trips.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
     </div>
-  <% end %>
-
-
-
-
-  <div class="field">
-    <%= f.label :trip_name, "JOURNAL ENTRY NAME" %><br>
-    <%= f.text_field :trip_name %>
   </div>
-  <div class="field">
-    <%= f.label :location, "TRIP LOCATION(S)" %><br>
-    <%= f.text_field :location %>
-  </div>
-<!--   <div class="field"> -->
-    <%#= f.label :user_id %>
-    <%#= f.number_field :user_id %>
-<!--   </div> -->
-<div class="field">
- 
-    <%= f.label :to_pack, "CAN'T FORGET TO PACK" %><br>
-    <%= f.text_area :to_pack %>
-  </div>
-  <div class="field">
-    <%= f.label :to_do, "THINGS I WANT TO DO" %><br>
-    <%= f.text_area :to_do %>
-  </div>
- 
-  <div class="field">
-
-    <%= f.label :budget, "TRIP BUDGET" %><br>
-    <%= f.number_field :budget %>
-     <%= f.hidden_field :user_id, :value => session["user_id"] %>
-  </div>
-  <h1>Trip Created!</h1>
-  <div class="actions" class="submit">
-    <%= f.submit "ADD TO JOURNAL" %>
-  </div>
-<% end %>
-
-</div>
-
 </div>
