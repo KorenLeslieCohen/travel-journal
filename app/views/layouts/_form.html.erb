@@ -1,3 +1,85 @@
+<div class="calc-modal">
+<h1>Estimate Your Budget</h1>
+<div class="calc">
+
+<p>Estimate your trip expenses, then complete the form to create your trip!</p>
+<center>
+<div class="calc-body">
+<!-- <h1>Travel Calculator</h1> -->
+<form id='accordion'>
+<ul>
+
+   <li><a><span>Travel Expenses</span></a>
+      <ul>
+       <li>
+
+        <a>Plane/Train/Bus Tickets</a>$<input type="text" id="amount1" name="amount" placeholder="0"></li>
+       <li><a>Checked Baggage Fees</a>$<input type="text" id="amount2" name="amount" placeholder="0">
+       </li>
+       <li><a href='#'><span>Parking at Airport/Station</span></a>$<input type="text" id="amount3" name="amount" placeholder="0"></li>
+       <li><a href='#'><span>Gas & Tolls</span></a>$<input type="text" id="amount4" name="amount" placeholder="0"></li>
+       <li><a href='#'><span>Taxi/Shuttle to Airport/Station</span></a>$<input type="text" id="amount5" name="amount" placeholder="0"></li>
+      </ul>
+    </li>
+
+    <li><a><span>Logistics</span></a>
+   <ul>
+         <li><a href='#'><span>Passport and Visa Fees</span></a>$<input type="text" id="passports" name="amount" placeholder="0"></li>
+         <li><a href='#'><span>Travel Insurance</span></a>$<input type="text" id="insurance" name="amount" placeholder="0"></li>
+         <li><a href='#'><span>Luggage</span></a>$<input type="text" id="luggage" name="amount" placeholder="0"></li>
+         <li><a href='#'><span>Other</span></a>$<input type="text" id="other" name="amount" placeholder="0"></li>
+      </ul>
+   </li>
+
+   <li><a><span>Accomodation</span></a>
+      <ul>
+         <li><a href='#'><span>Hotel (Price x Number of Nights)</span></a>$<input type="text" id="hotel-price" name="amount" placeholder="0 (price per night)">x<input type="text" id="hotel-nights" name="amount" placeholder="0 (number of nights)"></li>
+         <li><a href='#'><span>Hotel Services (Spa, Minibar, Tips, etc.)</span></a>$<input type="text" id="hotel-services" name="amount" placeholder="0"></li>
+      </ul>
+   </li>
+
+   <li><a><span>Food & Drink</span></a>
+      <ul>
+         <li><a href='#'><span>Food (Amount per Day x Number of Days)</span></a>$<input type="text" id="food-daily" name="amount" placeholder="0 (amount per day)">x<input type="text" id="food-days" name="amount" placeholder="0 (number of days)"></li>
+         <li><a href='#'><span>Nightlife (Amount per Day x Number of Days)</span></a>$<input type="text" id="nightlife-price" name="amount" placeholder="0 (amount per day)">x<input type="text" id="nightlife-days" name="amount" placeholder="0 (number of days)"></li>
+      </ul>
+   </li>
+
+   <li><a><span>Entertainment</span></a>
+   <ul>
+         <li><a href='#'><span>Attractions (Entry Fees, Transport, Tours)</span></a>$<input type="text" id="attractions" name="amount" placeholder="0"></li>
+         <li><a href='#'><span>Shopping & Souvenirs</span></a>$<input type="text" id="shopping" name="amount" placeholder="0"></li>
+      </ul>
+   </li>
+
+      <li><a><span>Calculate</span></a>
+   <ul>
+      <!--    <li><a href='#'><span>Attractions (Entry Fees, Transport, Tours)</span></a>$<input type="text" id="attractions" name="amount" placeholder="0"></li>
+         <li><a href='#'><span>Shopping & Souvenirs</span></a>$<input type="text" id="shopping" name="amount" placeholder="0"></li> -->
+         <input id="submit" type="submit" value="Calculate">
+<input id="reset" type="reset" value="Start Over">
+      </ul>
+   </li>
+
+    
+
+</ul>
+
+<!-- <input id="submit" type="submit" value="Calculate">
+<input id="reset" type="reset" value="Start Over"> -->
+</form>
+<h1 id="total">Estimated budget: $0</h1>
+
+
+
+  
+</div>
+</center>
+</div>
+ <h1>&hearts;</h1>
+
+<h1>New Journal Entry</h1>
+<p>Complete the form to create a new travel journal entry!</p>
 <div class="new-journal-form">
 <%= form_for Trip.new, url: "/trips" do |f| %>
   <% if Trip.new.errors.any? %>
@@ -11,7 +93,7 @@
       </ul>
     </div>
   <% end %>
-<h1>New Journal Entry</h1>
+
 
 
   <div class="field">
@@ -44,5 +126,7 @@
     <%= f.submit "ADD TO JOURNAL" %>
   </div>
 <% end %>
+
+</div>
 
 </div>

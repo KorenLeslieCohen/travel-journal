@@ -134,6 +134,12 @@ h1 {
     color: white;
 }
 
+/*.calc h2 #total {
+  font-size: 10px;
+}*/
+
+
+
 /*input {
   padding: 5px;
 }*/
@@ -284,11 +290,16 @@ label,
 
 .calc {
   /*height: 100vh;*/
-  background-size: cover;
-     background-image: image-url("sjds.jpg");
-     height: 1000px;
+/*  background-size: cover;
+     background-image: image-url("sjds.jpg");*/
+     /*background: #cccccc;*/
+     height: 100%;
 }
 
+/*.calc-modal {
+  height: 400px;
+}
+*/
 .new-trip {
     height: 100vh;
   background-size: cover;
@@ -355,6 +366,23 @@ label,
   opacity: 0;
 }
 
+input {
+  color: black;
+ /* height: 75px;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 300px;*/
+}
+
+/*.pink-link a,
+.pink-link a:visited {
+  color: #ed1144;
+}
+
+.pink-link a:hover {
+  color: black;
+}*/
+
 /*MODAL*/
 
 /* About Modal */
@@ -366,7 +394,7 @@ label,
   right: 0;
   bottom: 0;
   left: 0;
-  /*background: #222622;*/
+  background: #222622;
 /*background: white;*/
   /*background-image: image-url("sjds.jpg");*/
   /*background-image: cover;*/
@@ -375,7 +403,7 @@ label,
   background: -o-linear-gradient(black, #ed1144, green, grey); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(black, #ed1144, green, grey); /* For Firefox 3.6 to 15 */
   background: linear-gradient(black, #ed1144, green, grey); /* Standard syntax */
-
+background: #222622;
   z-index: 99999;
   opacity:0;
   transition-duration: 1.6s;

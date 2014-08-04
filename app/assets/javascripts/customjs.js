@@ -193,7 +193,7 @@ function getTotal() {
       }
 
     event.preventDefault();
-    $("#total").text("The Damage: $"+(total.toFixed(2)));
+    $("#total").text("Estimated budget: $"+(total.toFixed(2)));
 })
   };
 
@@ -202,7 +202,7 @@ function getTotal() {
 
     $("#reset").click(function(event) {
       total = 0;
-      $("#total").text("The Damage: $"+(total));
+      $("#total").text("Estimated budget: $"+(total));
     event.preventDefault();
     });
 

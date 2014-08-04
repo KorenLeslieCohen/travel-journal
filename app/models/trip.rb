@@ -3,12 +3,12 @@ class Trip < ActiveRecord::Base
 
   validates_presence_of :trip_name
 
-  before_save :set_defaults
-  after_initialize :set_defaults
+  # before_save :set_defaults
+  # after_initialize :set_defaults
 
-  protected
+  # protected
 
-  def set_defaults
-    self.to_do = "(empty)" if self.to_pack == nil
-  end
+  # def set_defaults
+  #   self.to_do = "(empty)" if self.to_pack == nil
+  # end
 end
