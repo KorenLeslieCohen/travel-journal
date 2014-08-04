@@ -475,7 +475,7 @@ background: #222622;
 #openModal textarea {
   color: black;
   /*border-radius: 5px;*/
-  width: 500px;
+  width: 600px;
   padding: 5px;
   background: white;
      /*background: rgb(237, 17, 68);  Fall-back for browsers that don't support rgba */
