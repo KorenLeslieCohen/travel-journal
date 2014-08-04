@@ -1,16 +1,18 @@
 <div class="new-journal-form">
-<%= form_for(@trip) do |f| %>
-  <% if @trip.errors.any? %>
+<%= form_for Trip.new, url: "/trips" do |f| %>
+  <% if Trip.new.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@trip.errors.count, "error") %> prohibited this trip from being saved:</h2>
+      <h2><%= pluralize(Trip.new.errors.count, "error") %> prohibited this trip from being saved:</h2>
 
       <ul>
-      <% @trip.errors.full_messages.each do |message| %>
+      <% Trip.new.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
     </div>
   <% end %>
+
+  <h1>New Journal Entry</h1>
 
   <div class="field">
     <%= f.label :trip_name %>

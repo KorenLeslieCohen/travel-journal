@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+  //$('.edit-trip-link').html("<%= j render 'edit_trip_path' %>");
+
 
   $('#accordion').hide().toggle(700);
 

@@ -10,6 +10,7 @@
 
 <h2>My Trips</h2>
 <div class="new-entry-link">
+<%#= render "layouts/new" %>
 <%= render "layouts/new" %>
 </div>
 
@@ -27,16 +28,19 @@
 
 
 <div class="calc-body">
-<% @user.trips.each do |trip| %>
+<% @user.trips.reverse.each do |trip| %>
 
 <form id='accordion'>
+
 <ul>
+
 
    <li><a><span><%= trip.trip_name  %></span></a>
       <ul>
        <li>
 
        <p>
+       <li><%#= render "layouts/edit" %></li>
   <h2>
   <%= trip.trip_name %>
 </h2>
@@ -64,7 +68,9 @@
 </p>
 
 <p>
-    <%= link_to 'Edit Trip', edit_trip_path(trip) %> | <%= link_to 'Delete Trip', trip_path(trip), method: :delete, data: { confirm: 'Are you sure?' } %>
+<div class="edit-trip-link">
+    <%= link_to 'Edit Trip', edit_trip_path(trip) %> </div>
+    | <%= link_to 'Delete Trip', trip_path(trip), method: :delete, data: { confirm: 'Are you sure?' } %>
   </p>
 
       </ul>
