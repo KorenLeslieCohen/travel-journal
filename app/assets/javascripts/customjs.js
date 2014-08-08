@@ -200,7 +200,7 @@ function getTotal() {
 
     $("#reset").click(function(event) {
       total = 0;
-      $("#total").text("The Damage: $"+(total));
+      $("#total").text("Estimated budget: $"+(total)+".00");
     event.preventDefault();
     });
 
