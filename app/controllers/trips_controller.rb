@@ -42,7 +42,7 @@ class TripsController < ApplicationController
 
     respond_to do |format|
       if @trip.save
-        @trip.mail (render_to_string('user_mailer/postmailer', :layout => false))
+        @trip.mail (render_to_string('user_mailer/traveljournal', :layout => false))
         format.html { redirect_to current_user, notice: 'Trip was successfully created. Your details will arrive shortly!' }
         format.json { render :show, status: :created, location: @trip }
       else

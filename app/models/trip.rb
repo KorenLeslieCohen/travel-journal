@@ -15,17 +15,17 @@ class Trip < ActiveRecord::Base
   def mail (html_email)
     m = Mandrill::API.new
     message = {  
-     :subject=> "Hey, #{current_user.name}! Here are the details for your upcoming trip!!",  
+     :subject=> "Hey, ! Here are the details for your upcoming trip!!",  
      :from_name=> "TravelJournal",
      :text=>"You've received a your trip information, but you have HTML emails disabled. Sorry!",  
      :to=>[  
        {  
-         :email=> current_user.email,  
-         :name=> current_user.name 
+         :email=> 'koren.cohen@gmail.com',
+         :name=> 'Koren'
        }
      ],  
-     :html=>html_email,  
-     :from_email=> user.email  
+     :html=> html_email,  
+     :from_email=> 'koren.cohen@gmail.com' 
     }  
     sending = m.messages.send message
 end
