@@ -56,9 +56,6 @@ h1 {
 }
 
 
-
-
-
  /* background: rgb(231, 231, 231);*/ /* Fall-back for browsers that don't support rgba */
  /* background: rgba(231, 231, 231, .8);*/
 
@@ -103,11 +100,6 @@ h1 {
 #accordion ul ul li.even {
   /*background: #fff;*/
   /*opacity: .7;*/
-}
-#accordion > ul > li > ul {
-    background: rgb(243, 243, 243);  /*Fall-back for browsers that don't support rgba */
-  background: rgba(243, 243, 243, .3);
-  border-radius: 10px;
 }
 
 #submit,
@@ -213,7 +205,10 @@ a:hover {
 
 
 
+.navbar img {
+  border-radius: 50px;
 
+}
  
 .navbar-default .navbar-nav > li > a {
     color: white;
@@ -332,7 +327,6 @@ label,
 
 .user-trips img {
   border-radius: 50px;
-
 }
 
 /*.user-trips #accordion a {
@@ -492,19 +486,14 @@ background: #222622;
 #openModal textarea {
   color: black;
   /*border-radius: 5px;*/
+  width: 600px;
   padding: 5px;
-  padding-left: 100px;
-  padding-right: 100px;
   background: white;
      /*background: rgb(237, 17, 68);  Fall-back for browsers that don't support rgba */
   /*background: rgba(237, 17, 68, .6);*/
   border: none;
   font-size: 20px;
 }
-
-/*#openModal .checkbox_container .field input {
-  width: 300px;
-}*/
 
 #openModal .actions input {
   padding: 10px;
@@ -626,19 +615,6 @@ background: #222622;
   font-size: 15px;
   border: 1px solid white;
 }
-
-/*.checkbox_container {
-  width: 300px;
-
-
-}
-
-.checkbox-field input,
-.checkbox-field checkbox,
-checkbox {
-  width: 300px;
-}*/
-
 
 
 

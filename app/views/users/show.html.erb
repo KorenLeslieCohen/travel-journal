@@ -5,7 +5,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <h1><%= @user.name %><br><br>
+  <h1><%= @user.name %>
   <%= image_tag current_user.image %></h1>
 </p>
 
@@ -39,14 +39,11 @@
  <%#= best_in_place @user, :name %>
 
    <li><a><span><%= trip.trip_name  %></span></a>
-
       <ul>
-
        <li>
 
        <p>
-      <!--  <li> --><%#= render "layouts/edit" %><!-- </li> -->
-    
+       <li><%#= render "layouts/edit" %></li>
   <h2>
   <%= trip.trip_name %>
 </h2>
@@ -114,10 +111,6 @@
    <% end %>
    </form>
    </div>
-  
-
-
-
   <!--  <h2> --><%#= link_to 'New Trip', new_trip_path %> <!-- </h2> -->
     <h2>  <%#= render "layouts/new" %> </h2>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
