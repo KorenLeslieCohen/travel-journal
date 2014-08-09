@@ -51,11 +51,16 @@ h1 {
   text-transform: uppercase;
   /*position: relative;*/
 }
+
+#accordion > ul > li > a:hover {
+  color: #ed1144;
+}
+
 #accordion > ul > li > a > span {
   /*background: #ed1144;*/
   padding: 10px;
   display: block;
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 300;
 }
 
@@ -636,6 +641,11 @@ background: #222622;
   border: 1px solid white;
   padding: 5px;
   padding-top: 10px;
+}
+
+.new-entry-link a:hover{
+  color: #ed1144;
+  border-color: #ed1144;
 }
 
 
