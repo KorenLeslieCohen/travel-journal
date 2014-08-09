@@ -1,0 +1,48 @@
+<div class="edit-journal-form">
+<%= form_for Trip.new, url: "/trips" do |f| %>
+  <% if Trip.new.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(Trip.new.errors.count, "error") %> prohibited this trip from being saved:</h2>
+
+      <ul>
+      <% current_user.trips.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<h1>New Journal Entry</h1>
+
+
+  <div class="field">
+    <%= f.label :trip_name, "JOURNAL ENTRY NAME" %><br>
+    <%= f.text_field :trip_name %>
+  </div>
+  <div class="field">
+    <%= f.label :location, "TRIP LOCATION(S)" %><br>
+    <%= f.text_field :location %>
+  </div>
+<!--   <div class="field"> -->
+    <%#= f.label :user_id %>
+    <%#= f.number_field :user_id %>
+<!--   </div> -->
+<div class="field">
+ 
+    <%= f.label :supplies, "CAN'T FORGET TO PACK" %><br>
+    <%= f.collection_check_boxes :supply_ids, Supply.all, :id, :name, {:item_wrapper_class => 'checkbox_container'} %>
+  </div>
+  <div class="field">
+    <%= f.label :to_do, "THINGS I WANT TO DO" %><br>
+    <%= f.text_area :to_do %>
+  </div>
+  <div class="field">
+    <%= f.label :budget, "TRIP BUDGET" %><br>
+    <%= f.number_field :budget %>
+     <%= f.hidden_field :user_id, :value => session["user_id"] %>
+  </div>
+  <div class="actions" class="submit">
+    <%= f.submit "ADD TO JOURNAL" %>
+  </div>
+<% end %>
+
+</div>
