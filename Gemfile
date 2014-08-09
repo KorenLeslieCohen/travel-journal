@@ -24,6 +24,10 @@ gem 'spring',        group: :development
 
 gem 'best_in_place', :git => 'https://github.com/aaronchi/best_in_place.git'
 
+# Mandrill API
+gem 'mail'
+gem 'mandrill-api', :require => 'mandrill' 
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
