@@ -11,7 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140730020636) do
+ActiveRecord::Schema.define(version: 20140809012842) do
+
+  create_table "supplies", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "trip_supplies", force: true do |t|
+    t.integer  "trip_id"
+    t.integer  "supply_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "trip_supplies", ["supply_id"], name: "index_trip_supplies_on_supply_id"
+  add_index "trip_supplies", ["trip_id"], name: "index_trip_supplies_on_trip_id"
 
   create_table "trips", force: true do |t|
     t.string   "trip_name"

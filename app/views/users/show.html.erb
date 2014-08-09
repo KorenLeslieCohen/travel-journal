@@ -56,6 +56,9 @@
 
 <p>
   <strong>To pack:</strong>
+  <%trip.supplies.each do |supply|%>
+  <%= supply.name%>
+  <%end%>
   <%= best_in_place trip, :to_pack %>
 </p>
 

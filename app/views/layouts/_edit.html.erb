@@ -28,8 +28,13 @@
 <!--   </div> -->
 <div class="field">
  
-    <%= f.label :to_pack, "CAN'T FORGET TO PACK" %><br>
-    <%= f.text_area :to_pack %>
+    <%= f.label :supplies, "CAN'T FORGET TO PACK" %><br>
+    <%= f.collection_check_boxes :supply_ids, Supply.all, :id, :id %><br>
+    <%= f.fields_for(:supplies, Supply.new) do |supply_form| %>
+      <p>Add a new tag:</p><br>
+      <%= supply_form.label :name %>
+      <%= supply_form.text_field :name %>
+    <% end %>
   </div>
   <div class="field">
     <%= f.label :to_do, "THINGS I WANT TO DO" %><br>

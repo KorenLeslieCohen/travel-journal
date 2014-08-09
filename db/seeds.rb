@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+toothbrush = Supply.create(:name => "Toothbrush")
+brush = Supply.create(:name => "Brush")
+swimsuit = Supply.create(:name => "Swimsuit")
