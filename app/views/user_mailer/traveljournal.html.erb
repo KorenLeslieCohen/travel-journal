@@ -14,6 +14,11 @@
 </p>
 
 <p>
+  <strong>Location:</strong>
+  <%= @trip.location %>
+</p>
+
+<p>
   <strong>To pack:</strong>
   <% @trip.supplies.each do |supply|%>
   <%= supply.name%>

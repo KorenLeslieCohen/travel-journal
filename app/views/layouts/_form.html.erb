@@ -105,19 +105,29 @@
     <%= f.label :location, "TRIP LOCATION(S)" %><br>
     <%= f.text_field :location %>
   </div>
+    <div class="field">
+    <%= f.label :date, "DATE" %><br>
+    <%= f.text_field :date %>
+  </div>
 <!--   <div class="field"> -->
     <%#= f.label :user_id %>
     <%#= f.number_field :user_id %>
 <!--   </div> -->
-<div class="field">
+<div class="field checkbox-field">
     <%= f.label :supplies, "THINGS I WANT TO PACK"%><br>
-    <%= f.collection_check_boxes :supply_ids, Supply.all, :id, :name %><br>
+    <%= f.collection_check_boxes :supply_ids, Supply.all, :id, :name, {:item_wrapper_class => 'checkbox_container'}%>
     <%#= f.fields_for(:supplies, Supply.new) do |supply_form| %>
       <!-- <p>Add a new tag:</p><br> -->
       <%#= supply_form.label :name %>
       <%#= supply_form.text_field :name %>
     <%# end %>
   </div>
+
+    <div class="field">
+    <%= f.label :to_pack, "ADDITIONAL PACKING ITEMS" %><br>
+    <%= f.text_field :to_pack %>
+  </div>
+
   <div class="field">
     <%= f.label :to_do, "THINGS I WANT TO DO" %><br>
     <%= f.text_area :to_do %>
