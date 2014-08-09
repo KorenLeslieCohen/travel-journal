@@ -9,7 +9,12 @@
 </p>
 
 <h2>My Trips</h2>
+<div class="new-entry-link">
+<%#= render "layouts/new" %>
 
+ <%= render "layouts/calc" %>
+ <%= render "layouts/new" %>
+</div>
 
 <% if @user.trips.length == 0 %>
 <h2>You haven't planned any trips yet.</h2>
@@ -25,45 +30,50 @@
 
 
 <div class="calc-body">
-<% @user.trips.each do |trip| %>
+<% @user.trips.reverse.each do |trip| %>
 
 <form id='accordion'>
+
 <ul>
+ <%#= best_in_place @user, :name %>
 
    <li><a><span><%= trip.trip_name  %></span></a>
       <ul>
        <li>
 
        <p>
+       <li><%#= render "layouts/edit" %></li>
   <h2>
   <%= trip.trip_name %>
 </h2>
 
 <p>
-  <strong>Location:</strong><br>
-  <%= trip.location %>
+  <strong>Location:</strong>
+  <%#= trip.location %><%= best_in_place trip, :location %>
 </p>
 
 
 
 <p>
   <strong>To pack:</strong>
-  <%= trip.to_pack %>
+  <%= best_in_place trip, :to_pack %>
 </p>
 
 <p>
   <strong>To do:</strong>
-  <%= trip.to_do %>
+  <%= best_in_place trip, :to_do %>
 </p>
 
 <p>
   <strong>Budget:</strong>
-  <%= trip.budget %>
+  <%= best_in_place trip, :budget %>
 </p>
 
-<p>
-    <%= link_to 'Edit Trip', edit_trip_path(trip) %> | <%= link_to 'Delete Trip', trip_path(trip), method: :delete, data: { confirm: 'Are you sure?' } %>
-  </p>
+<div class="pink-link">
+
+<%= link_to 'Delete Trip', trip_path(trip), method: :delete, data: { confirm: 'Are you sure?' } %>
+
+  </div>
 
       </ul>
     </li>

@@ -12,7 +12,7 @@ h1, h2 {
 }
 
 h1 {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 #accordion,
 #accordion ul,
@@ -134,6 +134,12 @@ h1 {
     color: white;
 }
 
+/*.calc h2 #total {
+  font-size: 10px;
+}*/
+
+
+
 /*input {
   padding: 5px;
 }*/
@@ -221,7 +227,7 @@ a:hover {
   background: black;
   background-attachment: fixed;
   background-size: cover;
-  background-image: image-url("thailand1.jpg");
+  background-image: image-url("sjds.jpg");
 
 }
 
@@ -249,6 +255,23 @@ a:hover {
   color: white;
 }
 
+.new-entry-link {
+    font-family: 'Josefin Sans';
+    font-size: 30px;
+}
+
+.field label, 
+label,
+.field input,
+.field textarea {
+    font-family: 'Josefin Sans';
+    font-size: 15px;
+}
+
+/*#field {
+  height: 50px;
+}
+*/
 .index-description {
   height: 750px;
   background: black;
@@ -267,11 +290,16 @@ a:hover {
 
 .calc {
   /*height: 100vh;*/
-  background-size: cover;
-     background-image: image-url("sjds.jpg");
-     height: 1000px;
+/*  background-size: cover;
+     background-image: image-url("sjds.jpg");*/
+     /*background: #cccccc;*/
+     height: 100%;
 }
 
+/*.calc-modal {
+  height: 400px;
+}
+*/
 .new-trip {
     height: 100vh;
   background-size: cover;
@@ -288,8 +316,9 @@ a:hover {
 /*height: 100vh;*/
 /*height: 100%;*/
   background-size: cover;
-  height: 100%;
+  /*height: 100%;*/
        background-image: image-url("thailand2.jpg");
+       background-image: no-repeat;
 }
 
 /*.user-trips #accordion a {
@@ -333,59 +362,252 @@ a:hover {
   font-size: 20px;
 }
 
+.index-cover p span {
+  color: grey;
+  opacity: 0;
+}
+
+input {
+  color: black;
+ /* height: 75px;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 300px;*/
+}
+
+/*.pink-link a,
+.pink-link a:visited {
+  color: #ed1144;
+}
+
+.pink-link a:hover {
+  color: black;
+}*/
+
 /*MODAL*/
 
 /* About Modal */
 .modalDialog {
   position: fixed;
   overflow: scroll;
-  font-family: Arial, Helvetica, sans-serif;
+  /*font-family: Arial, Helvetica, sans-serif;*/
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background: #2b2d35;
+  background: #222622;
+/*background: white;*/
+  /*background-image: image-url("sjds.jpg");*/
+  /*background-image: cover;*/
+
+  background: -webkit-linear-gradient(black, #ed1144, green, grey); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(black, #ed1144, green, grey); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(black, #ed1144, green, grey); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(black, #ed1144, green, grey); /* Standard syntax */
+background: #222622;
   z-index: 99999;
   opacity:0;
-  -webkit-transition: opacity 400ms ease-in;
+  transition-duration: 1.6s;
+  transition-property: opacity;
+/*  -webkit-transition: opacity 400ms ease-in;
   -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;*/
   pointer-events: none;
-  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 }
 
 .modalDialog:target {
-  opacity:.9;
+  opacity: 1;
   pointer-events: auto;
+  transition-duration: 1.6s;
 }
 
 .modalDialog > .modal-box {
   width: 50%;
   position: relative;
-  margin: 10% auto;
-  padding: 5px 20px 13px 20px;
-  border-radius: 0px;
-  color: #fff;
+  /*margin: 10% auto;*/
+  /*padding: 5px 20px 13px 20px;*/
+  /*border-radius: 0px;*/
+  color: #ffffff;
 }
 
 .modalDialog h2, h3 {
-  color: #88b7b3;
+  color: #ffffff;
+  padding-top: 10px;
 }
 
+/*h1 {
+  text-align: center;
+}*/
+
+/*.modal-text h1 {
+  text-align: center;
+}*/
+/*h3 {
+  color: white;
+  font-family: 'Coming Soon';
+}*/
+
+
 .close {
-  color: #fff;
+  color: white;
+}
+
+.close a {
+  color: #ffffff;
   line-height: 25px;
   position: absolute;
   right: -12px;
   text-align: center;
-  font-size: 60px;
+  font-size: 100px;
   top: -20px;
   width: 80px;
   height: 80px;
   text-decoration: none;
 }
 
-.close:hover { color: #88b7b3; }
+.nav, .nav a {
+  color: white;
+}
+
+.close:hover { color: #ffffff; }
+
+#openModal .field input,
+#openModal textarea {
+  color: black;
+  /*border-radius: 5px;*/
+  width: 600px;
+  padding: 5px;
+  background: white;
+     /*background: rgb(237, 17, 68);  Fall-back for browsers that don't support rgba */
+  /*background: rgba(237, 17, 68, .6);*/
+  border: none;
+  font-size: 20px;
+}
+
+#openModal .actions input {
+  padding: 10px;
+  margin-top: 20px;
+  color: white;
+  background: none;
+  font-size: 15px;
+  border: 1px solid white;
+}
+
+/*MODAL2*/
+
+/* About Modal */
+.modalDialog2 {
+  position: fixed;
+  overflow: scroll;
+  width: 400px;
+  /*height: 1000px;*/
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  top: 0;
+  /*right: 0;*/
+  bottom: 0;
+  left: 0;
+  background: #222622;
+/*background: white;*/
+  /*background-image: image-url("sjds.jpg");*/
+  /*background-image: cover;*/
+
+  background: -webkit-linear-gradient(black, #ed1144, green, grey); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(black, #ed1144, green, grey); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(black, #ed1144, green, grey); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(black, #ed1144, green, grey); /* Standard syntax */
+background: #222622;
+  z-index: 99999;
+  opacity:0;
+  transition-duration: 1.6s;
+  transition-property: opacity;
+/*  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;*/
+  pointer-events: none;
+  /*font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+}
+
+.modalDialog2:target {
+  opacity: .95;
+  pointer-events: auto;
+  transition-duration: 1.6s;
+}
+
+.modalDialog2 > .modal-box2 {
+  width: 50%;
+  position: relative;
+  /*margin: 10% auto;*/
+  /*padding: 5px 20px 13px 20px;*/
+  /*border-radius: 0px;*/
+  color: #ffffff;
+}
+
+.modalDialog2 h2, h3 {
+  color: #ffffff;
+  padding-top: 10px;
+}
+
+/*h1 {
+  text-align: center;
+}*/
+
+/*.modal-text h1 {
+  text-align: center;
+}*/
+/*h3 {
+  color: white;
+  font-family: 'Coming Soon';
+}*/
+
+
+.close2 {
+  color: white;
+}
+
+.close2 a {
+  color: #ffffff;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  font-size: 100px;
+  top: -20px;
+  width: 80px;
+  height: 80px;
+  text-decoration: none;
+}
+
+.nav, .nav a {
+  color: white;
+}
+
+.close2:hover { color: #ffffff; }
+
+#openModal2 .field input,
+#openModal2 textarea {
+  color: black;
+  /*border-radius: 5px;*/
+  width: 600px;
+  padding: 5px;
+  background: white;
+     /*background: rgb(237, 17, 68);  Fall-back for browsers that don't support rgba */
+  /*background: rgba(237, 17, 68, .6);*/
+  border: none;
+  font-size: 20px;
+}
+
+#openModal2 .actions input {
+  padding: 10px;
+  margin-top: 20px;
+  color: white;
+  background: none;
+  font-size: 15px;
+  border: 1px solid white;
+}
+
+
+
 
 
 

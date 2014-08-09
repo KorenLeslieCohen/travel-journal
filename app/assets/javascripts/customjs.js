@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+  //$('.edit-trip-link').html("<%= j render 'edit_trip_path' %>");
+
 
   $('#accordion').hide().toggle(700);
 
@@ -20,7 +22,7 @@ $(document).ready(function(){
 
 });
 
-
+  
 
 // CALCULATE
 var total = 0,
@@ -191,7 +193,7 @@ function getTotal() {
       }
 
     event.preventDefault();
-    $("#total").text("The Damage: $"+(total.toFixed(2)));
+    $("#total").text("Estimated budget: $"+(total.toFixed(2)));
 })
   };
 

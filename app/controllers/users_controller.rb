@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+  respond_to :html, :json # added for AJAX
 
   # GET /users
   # GET /users.json

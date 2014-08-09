@@ -1,5 +1,6 @@
 class TripsController < ApplicationController
   before_action :set_trip, only: [:show, :edit, :update, :destroy]
+  respond_to :html, :json # added for AJAX
 
   # GET /trips
   # GET /trips.json
