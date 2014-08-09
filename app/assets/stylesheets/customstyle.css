@@ -207,6 +207,7 @@ a:hover {
 
 .navbar img {
   border-radius: 50px;
+
 }
  
 .navbar-default .navbar-nav > li > a {
@@ -272,12 +273,14 @@ label,
   height: 50px;
 }
 */
+
+
 .index-description {
   height: 750px;
   background: black;
   background-attachment: fixed;
-  background-size: cover;
-    background-image: image-url("thailand2.jpg");
+  /*background-size: cover;*/
+    /*background-image: image-url("thailand2.jpg");*/
 }
 
 .index-authors {
@@ -312,6 +315,7 @@ label,
      background-image: image-url("thailand1.jpg");
 }
 
+/*profile page*/
 .user-trips {
 /*height: 100vh;*/
 /*height: 100%;*/
