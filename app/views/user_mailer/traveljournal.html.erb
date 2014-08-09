@@ -1,1 +1,33 @@
-<h1>test</h1>
+<h1>Temporary Email with Trip Details</h1>
+<%# @user.trips.reverse.each do |trip| %>
+
+<ul>
+ <%#= best_in_place @user, :name %>
+
+  <h2>
+  Here is the information you entered about your trip, <%= @trip.trip_name %>!
+</h2>
+
+<p>
+  <strong>Location:</strong>
+  <%= @trip.location %>
+</p>
+
+<p>
+  <strong>To pack:</strong>
+  <% @trip.supplies.each do |supply|%>
+  <%= supply.name%>
+  <%end%>
+  <%= @trip.to_pack %>
+</p>
+
+<p>
+  <strong>To do:</strong>
+  <%= @trip.to_do %>
+</p>
+
+<p>
+  <strong>Budget:</strong>
+  <%= @trip.budget %>
+</p>
+
