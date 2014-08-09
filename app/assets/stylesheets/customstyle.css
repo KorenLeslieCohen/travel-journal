@@ -101,6 +101,14 @@ h1 {
   /*background: #fff;*/
   /*opacity: .7;*/
 }
+<<<<<<< HEAD
+=======
+/*#accordion > ul > li > ul {
+    background: rgb(243, 243, 243);  *//*Fall-back for browsers that don't support rgba */
+/*  background: rgba(243, 243, 243, .3);
+  border-radius: 10px;
+}*/
+>>>>>>> migrations
 
 #submit,
 #reset {
@@ -615,9 +623,5 @@ background: #222622;
   font-size: 15px;
   border: 1px solid white;
 }
-
-
-
-
 
 

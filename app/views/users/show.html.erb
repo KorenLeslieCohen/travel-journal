@@ -5,16 +5,17 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <h1><%= @user.name %>
-  <%= image_tag current_user.image %></h1>
+  <h1><%= image_tag current_user.image %><br><%= @user.name %>
+   </h1>
 </p>
 
 <h2>My Trips</h2>
 <div class="new-entry-link">
 <%#= render "layouts/new" %>
 
- <%#= render "layouts/calc" %>
- <%= render "layouts/new" %>
+ <%= render "layouts/new" %><br>
+ <%= render "layouts/calc" %>
+
 </div>
 
 <% if @user.trips.length == 0 %>
