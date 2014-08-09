@@ -1,5 +1,5 @@
 class Supply < ActiveRecord::Base
-  has_many :user_supplies
-  has_many :users, through: :user_supplies
+  has_many :trip_supplies
+  has_many :trips, through: :trip_supplies
   
 end

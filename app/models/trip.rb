@@ -1,5 +1,7 @@
 class Trip < ActiveRecord::Base
-  belongs_to :user
+  has_many :trip_supplies
+  has_many :supplies, through: :trip_supplies
+  accepts_nested_attributes_for :supplies
 
   validates_presence_of :trip_name
 
