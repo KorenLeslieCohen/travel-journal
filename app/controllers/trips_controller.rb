@@ -6,6 +6,8 @@ class TripsController < ApplicationController
   # GET /trips.json
   def index
     # @trips = Trip.all
+    @trips = Trip.find(:all)
+    @date = params[:month] ? Date.parse(params[:month]) : Date.today
     redirect_to root_url
   end
 
@@ -85,7 +87,7 @@ class TripsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def trip_params
-      params.require(:trip).permit(:trip_name, :location, :user_id, :to_do, :budget, :supply_ids => [], :supplies_attributes => [:id, :name])
+      params.require(:trip).permit(:trip_name, :location, :user_id, :date, :to_do, :budget, :supply_ids => [], :supplies_attributes => [:id, :name])
     end
 
     def trip_author?

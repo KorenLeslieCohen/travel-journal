@@ -1,4 +1,10 @@
 GIT
+  remote: git://github.com/watu/table_builder.git
+  revision: f0ee3263c816005566e2ea06b107eb1e954c5f3c
+  specs:
+    watu_table_builder (0.3.0)
+
+GIT
   remote: https://github.com/aaronchi/best_in_place.git
   revision: 1152e2256afd485e66602833fd99d09d60994841
   specs:
@@ -294,3 +300,4 @@ DEPENDENCIES
   sqlite3
   thin
   uglifier (>= 1.3.0)
+  watu_table_builder!
