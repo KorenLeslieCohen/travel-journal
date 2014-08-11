@@ -6,6 +6,8 @@ class TripsController < ApplicationController
   # GET /trips.json
   def index
     # @trips = Trip.all
+    @trips = Trip.find(:all)
+    @date = params[:month] ? Date.parse(params[:month]) : Date.today
     redirect_to root_url
   end
 
