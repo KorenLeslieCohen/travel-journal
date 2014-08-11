@@ -3,12 +3,15 @@
 @import url(http://fonts.googleapis.com/css?family=Lobster+Two);
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
 
-
 /*ACCORDION CALCULATOR*/
 h1, h2 {
   font-family: 'Coming Soon';
   font-size: 40px;
   color: #ed1144;
+}
+
+h2 {
+  margin-bottom: 18px;
 }
 
 h1 {
@@ -47,11 +50,16 @@ h1 {
   text-transform: uppercase;
   /*position: relative;*/
 }
+
+#accordion > ul > li > a:hover {
+  color: #ed1144;
+}
+
 #accordion > ul > li > a > span {
   /*background: #ed1144;*/
   padding: 10px;
   display: block;
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 300;
 }
 
@@ -101,6 +109,13 @@ h1 {
   /*background: #fff;*/
   /*opacity: .7;*/
 }
+
+/*#accordion > ul > li > ul {
+    background: rgb(243, 243, 243);  *//*Fall-back for browsers that don't support rgba */
+/*  background: rgba(243, 243, 243, .3);
+  border-radius: 10px;
+}*/
+
 
 #submit,
 #reset {
@@ -207,6 +222,8 @@ a:hover {
 
 .navbar img {
   border-radius: 50px;
+  margin-bottom: 5px;
+  padding:5px;
 
 }
  
@@ -249,11 +266,13 @@ a:hover {
   font-family: 'Lobster Two';
   font-size: 100px;
 }
-
-.index-cover h2, 
-.user-trips h2  {
+ 
+.user-trips h4, 
+h4  {
   font-family: 'Josefin Sans';
   color: white;
+  font-size: 40px;
+  padding: 10px;
 }
 
 .new-entry-link {
@@ -320,9 +339,13 @@ label,
 /*height: 100vh;*/
 /*height: 100%;*/
   background-size: cover;
-  /*height: 100%;*/
+  height: 1500px;
        background-image: image-url("thailand2.jpg");
        background-image: no-repeat;
+}
+
+.user-trips img {
+  border-radius: 50px;
 }
 
 /*.user-trips #accordion a {
@@ -349,7 +372,11 @@ label,
 }
 
 #accordion p {
-  color: white;
+  color: #ed1144;
+  font-family: 'Josefin Sans';
+  font-size: 25px;
+  line-height: 1.2;
+  background: white;
 }
 
 /*.modal-trip {
@@ -387,6 +414,8 @@ input {
 .pink-link a:hover {
   color: black;
 }*/
+
+
 
 /*MODAL*/
 
@@ -480,8 +509,11 @@ background: #222622;
 #openModal textarea {
   color: black;
   /*border-radius: 5px;*/
-  width: 600px;
-  padding: 5px;
+  /*width: 300px;*/
+ padding-left: 100px;
+ padding-right: 100px;
+ padding-top: 5px;
+ padding-bottom: 5px;
   background: white;
      /*background: rgb(237, 17, 68);  Fall-back for browsers that don't support rgba */
   /*background: rgba(237, 17, 68, .6);*/
@@ -592,7 +624,7 @@ background: #222622;
 #openModal2 textarea {
   color: black;
   /*border-radius: 5px;*/
-  width: 600px;
+  /*width: 600px;*/
   padding: 5px;
   background: white;
      /*background: rgb(237, 17, 68);  Fall-back for browsers that don't support rgba */
@@ -610,8 +642,16 @@ background: #222622;
   border: 1px solid white;
 }
 
+.new-entry-link a {
+  color: white;
+  border: 1px solid white;
+  padding: 5px;
+  padding-top: 10px;
+}
 
-
-
+.new-entry-link a:hover{
+  color: #ed1144;
+  border-color: #ed1144;
+}
 
 

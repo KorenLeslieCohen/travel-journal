@@ -32,10 +32,14 @@ ActiveRecord::Schema.define(version: 20140809012842) do
   create_table "trips", force: true do |t|
     t.string   "trip_name"
     t.string   "location"
+    t.string   "date"
     t.integer  "user_id"
     t.text     "to_pack"
     t.text     "to_do"
     t.integer  "budget"
+    t.text     "things_i_did"
+    t.text     "things_i_liked"
+    t.text     "things_i_didnt_like"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

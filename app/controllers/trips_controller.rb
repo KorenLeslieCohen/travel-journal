@@ -19,11 +19,12 @@ class TripsController < ApplicationController
 
   # GET /trips/new
   def new
-    if logged_in?
-      @trip = Trip.new # this was original - the method was added
-    else
-      redirect_to root_url, :flash => { :error => "Make sure you're logged in!!" }
-    end
+    redirect_to root_url
+    # if logged_in?
+    #   @trip = Trip.new # this was original - the method was added
+    # else
+    #   redirect_to root_url, :flash => { :error => "Make sure you're logged in!!" }
+    # end
   end
 
   # GET /trips/1/edit
