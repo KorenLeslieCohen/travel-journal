@@ -1,3 +1,17 @@
+//= depend_on_asset "main-background.jpg"
+//= depend_on_asset "bootstrap/glyphicons-halflings-regular.eot"
+//= depend_on_asset "bootstrap/glyphicons-halflings-regular.woff"
+//= depend_on_asset "bootstrap/glyphicons-halflings-regular.ttf"
+//= depend_on_asset "bootstrap/glyphicons-halflings-regular.svg"
+//= depend_on_asset "bangkok.jpg"
+//= depend_on_asset "cartagena.jpg"
+//= depend_on_asset "carta.jpg"
+//= depend_on_asset "granada.jpg"
+//= depend_on_asset "market1.jpg"
+//= depend_on_asset "thailand1.jpg"
+//= depend_on_asset "thailand2.jpg"
+//= depend_on_asset "abstract.jpeg"
+
 @import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(http://fonts.googleapis.com/css?family=Lobster+Two);
@@ -245,8 +259,7 @@ a:hover {
   background: black;
   background-attachment: fixed;
   background-size: cover;
-  background-image: image-url("sjds.jpg");
-
+  background-image: image-url("main-background.jpg");
 }
 
 .index-cover,
@@ -313,7 +326,7 @@ label,
 .calc {
   /*height: 100vh;*/
 /*  background-size: cover;
-     background-image: image-url("sjds.jpg");*/
+     background-image: image-url("main-background.jpg");*/
      /*background: #cccccc;*/
      height: 100%;
 }
@@ -430,7 +443,7 @@ input {
   left: 0;
   background: #222622;
 /*background: white;*/
-  /*background-image: image-url("sjds.jpg");*/
+  /*background-image: image-url("main-background.jpg");*/
   /*background-image: cover;*/
 
   background: -webkit-linear-gradient(black, #ed1144, green, grey); /* For Safari 5.1 to 6.0 */
@@ -547,7 +560,7 @@ background: #222622;
   left: 0;
   background: #222622;
 /*background: white;*/
-  /*background-image: image-url("sjds.jpg");*/
+  /*background-image: image-url("main-background.jpg");*/
   /*background-image: cover;*/
 
   background: -webkit-linear-gradient(black, #ed1144, green, grey); /* For Safari 5.1 to 6.0 */
