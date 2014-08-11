@@ -512,8 +512,10 @@ background: #222622;
   /*width: 300px;*/
  padding-left: 100px;
  padding-right: 100px;
+
  padding-top: 5px;
  padding-bottom: 5px;
+
   background: white;
      /*background: rgb(237, 17, 68);  Fall-back for browsers that don't support rgba */
   /*background: rgba(237, 17, 68, .6);*/

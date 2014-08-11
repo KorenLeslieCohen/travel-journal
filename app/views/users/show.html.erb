@@ -59,6 +59,7 @@
   <%#= trip.date %><%= best_in_place trip, :date %>
 </p>
 
+
 <p>
   <strong>TO PACK:</strong>
   <%trip.supplies.each do |supply|%>
@@ -80,6 +81,7 @@
 
 <p>
   <strong>THINGS I DID:</strong>
+
   <%= best_in_place trip, :things_i_did %>
 </p>
 
@@ -93,7 +95,6 @@
   <%= best_in_place trip, :things_i_didnt_like %>
 </p>
 
- <%#= render "layouts/calc" %>
 
 <div class="pink-link">
 
