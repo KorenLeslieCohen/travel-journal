@@ -2,21 +2,18 @@ $(document).ready(function(){
 
   //$('.edit-trip-link').html("<%= j render 'edit_trip_path' %>");
 
-
   $('#accordion').hide().toggle(700);
 
   // ACCORDION
   $('#accordion ul ul li:odd').addClass('odd');
   $('#accordion ul ul li:even').addClass('even');
   $('#accordion > ul > li > a').click(function() {
-    var checkElement = $(this).next();
-    if((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+    var $checkElement = $(this).next();
+    if($checkElement.is('ul') && $checkElement.is(':visible')) {
       $(this).closest('li').removeClass('active');
-      checkElement.slideUp('normal');
-    }
-    if((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
-      $('#accordion ul ul:visible').slideUp('normal');
-      checkElement.slideDown('normal');
+      $checkElement.slideUp('normal');
+    }else{
+      $checkElement.slideDown('normal');
     }
 
 

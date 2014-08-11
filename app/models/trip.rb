@@ -28,7 +28,7 @@ class Trip < ActiveRecord::Base
         }
      ],  
      :html=> html_email,  
-     :from_email=> 'flatironpostcard@gmail.com'
+     :from_email=> 'traveljournalmy@gmail.com'
     }  
     sending = m.messages.send message
 end
