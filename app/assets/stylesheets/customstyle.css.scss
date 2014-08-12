@@ -13,17 +13,22 @@
 //= depend_on_asset "market1.jpg"
 //= depend_on_asset "abstract.jpeg"
 
-font-family: 'Shadows Into Light', cursive;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Lobster Two', cursive;
-font-family: 'Josefin Sans', sans-serif;
-
+@import url('//fonts.googleapis.com/css?family=Shadows+Into+Light');
+@import url('//fonts.googleapis.com/css?family=Open+Sans');
+@import url('//fonts.googleapis.com/css?family=Lobster+Two');
+@import url('//fonts.googleapis.com/css?family=Josefin+Sans');
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script:700);
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display);
 
 /*ACCORDION CALCULATOR*/
-h1, h2 {
-  font-family: 'Coming Soon';
+h1, h2{
   font-size: 40px;
-  color: #ed1144;
+  color: rgb(237,17,68);
+}
+
+h2{
+  color: rgb(255, 185, 209);
 }
 
 h2 {
@@ -45,7 +50,7 @@ h1 {
   text-decoration: none;
   line-height: 1;
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   position: relative;
 }
 #accordion a {
@@ -61,18 +66,17 @@ h1 {
   font-weight: bold;
   display: block;
   /*background: #bd0e36;*/
-  color: #ffffff;
-  border-bottom: 1px solid #ffffff;
+  color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(255, 255, 255);
   text-transform: uppercase;
   /*position: relative;*/
 }
 
 #accordion > ul > li > a:hover {
-  color: #ed1144;
+  color: rgb(255, 255, 255);
 }
 
-#accordion > ul > li > a > span {
-  /*background: #ed1144;*/
+#accordion > ul > li > a {
   padding: 10px;
   display: block;
   font-size: 17px;
@@ -91,12 +95,12 @@ h1 {
   border-bottom: none;
 }
 #accordion > ul > li.active > a {
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 /*is this being used for anything?*/
 #accordion > ul > li.active > a span {
-  background: #bd0e36;
+  background: rgb(189,14,54);
 }
 
 #accordion ul ul {
@@ -109,21 +113,52 @@ h1 {
 #accordion ul ul a {
   padding: 10px;
   display: block;
-  /*color: #ed1144;*/
-  color: white;
+  /*color: rgb(237,17,68);*/
+  color: rgb(255, 255, 255);
   font-size: 13px;
 }
 #accordion ul ul a:hover {
   /*color: #bd0e36;*/
-  color: white;
+  color: rgb(255, 255, 255);
 }
-#accordion ul ul li.odd {
-  /*background: #f4f4f4;*/
-  /*opacity: .7;*/
+#accordion span {
+    font-family: 'Playfair Display', serif;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-style: italic;
+    font-weight:900 !important;
+    
 }
-#accordion ul ul li.even {
-  /*background: #fff;*/
-  /*opacity: .7;*/
+
+#accordion ul.expenses{
+  color: rgb(112,128,144) !important;
+}
+
+li.odd span{
+  font-family: 'Playfair Display', serif !important;
+  color: rgb(000, 000, 000) !important;
+  font-size: 14px !important;
+  font-style: italic !important;
+}
+li.even span{
+  font-family: 'Playfair Display', serif !important;
+  color: rgb(000, 000, 000) !important;
+  font-size: 14px !important;
+  font-style: italic !important;
+}
+
+li.even input{
+  width: 187px !important;
+}
+li.odd input{
+  width: 187px !important;
+}
+#accordion li.even a, li.odd a{
+  background-color: rgb(255, 185, 209);
+}
+#accordion li.even, li.odd{
+  background-color: rgb(255, 185, 209);
+  // background: rgb(237,17,68) !important;
 }
 
 /*#accordion > ul > li > ul {
@@ -137,10 +172,10 @@ h1 {
 #reset {
   padding: 10px;
   margin-top: 20px;
-  color: white;
+  color: rgb(255, 255, 255);
   background: none;
   font-size: 15px;
-  border: 1px solid white;
+  border: 1px solid rgb(255, 255, 255);
 }
 
 /*body {
@@ -148,7 +183,8 @@ h1 {
 }*/
 
 .calc-body {
-  /*border: 2px solid #ed1144;*/
+  // border: 3px double rgb(237,17,68);
+  // border-spacing: 10px 50px;
   max-width: 700px;
   margin-top: 30px;
 
@@ -156,13 +192,13 @@ h1 {
 
 .calc-body h1,
 .user-trips h1 {
-    font-family: 'Lobster Two', cursive;
-    color: white;
+    font-family: 'Poiret One', cursive;
+    color: rgb(255, 255, 255);
 }
 
-.calc-body h2 {
-    font-family: 'Lobster Two', cursive;
-    color: white;
+
+.best_in_place {
+  color: rgb(000, 000, 000) !important;
 }
 
 /*.calc h2 #total {
@@ -189,7 +225,7 @@ header {
   background: none;
   border-color: none;
 /*  font-family: 'Gloria Hallelujah';
-  color: #ed1144;*/
+  color: rgb(237,17,68);*/
   border-radius: 0;
   border: 0px;
 }
@@ -218,7 +254,7 @@ header {
 
 a,
 a:visited {
-    color: #ed1144;
+    color: rgb(237,17,68);
     text-decoration: none;
     background: none;
 }
@@ -231,7 +267,7 @@ a:hover {
 .nav a:hover,
 .active a:hover,
 .navbar-nav a:hover, {
-    color: #ed1144;
+    color: rgb(237,17,68);
 }
 
 
@@ -244,11 +280,11 @@ a:hover {
 }
  
 .navbar-default .navbar-nav > li > a {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-    color: #ed1144;
+    color: rgb(237,17,68);
 }
 
 
@@ -271,23 +307,27 @@ a:hover {
 }
 
 .index-cover h1,
-#index-cover h1,
-.index-cover h2,
-#index-cover h2 {
-  color: white;
+#index-cover h1{
+  color: rgb(254, 4, 94);
+  font-family: 'Dancing Script', cursive;
+  font-size: 120px;
+}
 
-}
-.index-cover h1 {
+.index-cover h3,
+#index-cover h3{
+  color: rgb(255, 185, 209);
   font-family: 'Lobster Two', cursive;
-  font-size: 100px;
+  font-size: 40px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
- 
+
 .user-trips h4, 
 h4  {
-  font-family: 'Josefin Sans', sans-serif;
-  color: white;
-  font-size: 40px;
+  font-family: 'Dancing Script', cursive;
+  color: rgb(255, 255, 255);
+  font-size: 57px;
   padding: 10px;
+  text-shadow: -1px 0 rgb(237,17,68), 0 1px rgb(237,17,68), 1px 0 rgb(237,17,68), 0 -1px rgb(237,17,68);
 }
 
 .new-entry-link {
@@ -375,23 +415,25 @@ label,
 }
 
 .navbar-default .navbar-brand {
-  color: #ed1144;
-  font-family: 'Lobster Two', cursive;
+  color: rgb(237,17,68);
+  font-family: 'Dancing Script', cursive;
 }
 
 #notice {
-  color: white;
-  /*background: black;*/
-    background: rgb(237, 17, 68); /* Fall-back for browsers that don't support rgba */
+  color: rgb(255, 255, 255) !important;
+  font-size: 19px;
+  font-family: "Poiret One", serif;
+  background: rgb(237, 17, 68); /* Fall-back for browsers that don't support rgba */
   background: rgba(237, 17, 68, .6);
+  width: 502px;
 }
 
 #accordion p {
-  color: #ed1144;
-  font-family: 'Josefin Sans', sans-serif;
+  color: rgb(237,17,68);
+  font-family: 'Poiret One', cursive;
   font-size: 25px;
   line-height: 1.2;
-  background: white;
+  background: rgba(255, 255, 255, 0.75);
 }
 
 /*.modal-trip {
@@ -403,9 +445,9 @@ label,
 }*/
 
 .index-cover p {
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-family: 'Poiret One', cursive;
+  font-size: 27px;
 }
 
 .index-cover p span {
@@ -423,7 +465,7 @@ input {
 
 /*.pink-link a,
 .pink-link a:visited {
-  color: #ed1144;
+  color: rgb(237,17,68);
 }
 
 .pink-link a:hover {
@@ -443,16 +485,16 @@ input {
   right: 0;
   bottom: 0;
   left: 0;
-  background: #222622;
-/*background: white;*/
+  background: rgb(34,38,34);
+/*background: rgb(255, 255, 255);*/
   /*background-image: image-url("main-background.jpg");*/
   /*background-image: cover;*/
 
-  background: -webkit-linear-gradient(black, #ed1144, green, grey); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(black, #ed1144, green, grey); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(black, #ed1144, green, grey); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(black, #ed1144, green, grey); /* Standard syntax */
-background: #222622;
+  background: -webkit-linear-gradient(black, rgb(237,17,68), green, grey); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(black, rgb(237,17,68), green, grey); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(black, rgb(237,17,68), green, grey); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(black, rgb(237,17,68), green, grey); /* Standard syntax */
+background: rgb(34,38,34);
   z-index: 99999;
   opacity:0;
   transition-duration: 1.6s;
@@ -476,11 +518,11 @@ background: #222622;
   /*margin: 10% auto;*/
   /*padding: 5px 20px 13px 20px;*/
   /*border-radius: 0px;*/
-  color: #ffffff;
+  color: rgb(255, 255, 255);
 }
 
 .modalDialog h2, h3 {
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   padding-top: 10px;
 }
 
@@ -492,17 +534,17 @@ background: #222622;
   text-align: center;
 }*/
 /*h3 {
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: 'Coming Soon';
 }*/
 
 
 .close {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .close a {
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   line-height: 25px;
   position: absolute;
   right: -12px;
@@ -515,10 +557,10 @@ background: #222622;
 }
 
 .nav, .nav a {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
-.close:hover { color: #ffffff; }
+.close:hover { color: rgb(255, 255, 255); }
 
 #openModal .field input,
 #openModal textarea {
@@ -531,7 +573,7 @@ background: #222622;
  padding-top: 5px;
  padding-bottom: 5px;
 
-  background: white;
+  background: rgb(255, 255, 255);
      /*background: rgb(237, 17, 68);  Fall-back for browsers that don't support rgba */
   /*background: rgba(237, 17, 68, .6);*/
   border: none;
@@ -541,10 +583,10 @@ background: #222622;
 #openModal .actions input {
   padding: 10px;
   margin-top: 20px;
-  color: white;
+  color: rgb(255, 255, 255);
   background: none;
   font-size: 15px;
-  border: 1px solid white;
+  border: 1px solid rgb(255, 255, 255);
 }
 
 /*MODAL2*/
@@ -560,16 +602,16 @@ background: #222622;
   /*right: 0;*/
   bottom: 0;
   left: 0;
-  background: #222622;
-/*background: white;*/
+  background: rgb(34,38,34);
+/*background: rgb(255, 255, 255);*/
   /*background-image: image-url("main-background.jpg");*/
   /*background-image: cover;*/
 
-  background: -webkit-linear-gradient(black, #ed1144, green, grey); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(black, #ed1144, green, grey); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(black, #ed1144, green, grey); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(black, #ed1144, green, grey); /* Standard syntax */
-background: #222622;
+  background: -webkit-linear-gradient(black, rgb(255, 255, 255), green, grey); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(black, rgb(255, 255, 255), green, grey); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(black, rgb(255, 255, 255), green, grey); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(black, rgb(255, 255, 255), green, grey); /* Standard syntax */
+background: rgb(34,38,34);
   z-index: 99999;
   opacity:0;
   transition-duration: 1.6s;
@@ -593,11 +635,11 @@ background: #222622;
   /*margin: 10% auto;*/
   /*padding: 5px 20px 13px 20px;*/
   /*border-radius: 0px;*/
-  color: #ffffff;
+  color: rgb(255, 255, 255);
 }
 
 .modalDialog2 h2, h3 {
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   padding-top: 10px;
 }
 
@@ -609,17 +651,17 @@ background: #222622;
   text-align: center;
 }*/
 /*h3 {
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: 'Coming Soon';
 }*/
 
 
 .close2 {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .close2 a {
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   line-height: 25px;
   position: absolute;
   right: -12px;
@@ -632,10 +674,10 @@ background: #222622;
 }
 
 .nav, .nav a {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
-.close2:hover { color: #ffffff; }
+.close2:hover { color: rgb(255, 255, 255); }
 
 #openModal2 .field input,
 #openModal2 textarea {
@@ -643,7 +685,7 @@ background: #222622;
   /*border-radius: 5px;*/
   /*width: 600px;*/
   padding: 5px;
-  background: white;
+  background: rgb(255, 255, 255);
      /*background: rgb(237, 17, 68);  Fall-back for browsers that don't support rgba */
   /*background: rgba(237, 17, 68, .6);*/
   border: none;
@@ -653,22 +695,32 @@ background: #222622;
 #openModal2 .actions input {
   padding: 10px;
   margin-top: 20px;
-  color: white;
+  color: rgb(255, 255, 255);
   background: none;
   font-size: 15px;
-  border: 1px solid white;
+  border: 1px solid rgb(255, 255, 255);
 }
 
 .new-entry-link a {
-  color: white;
-  border: 1px solid white;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
   padding: 5px;
   padding-top: 10px;
+  background: rgb(237,17,68);
 }
 
 .new-entry-link a:hover{
-  color: #ed1144;
-  border-color: #ed1144;
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+}
+
+#submit:hover, #reset:hover{
+  background-color: rgba(237,17,68,.65);
+}
+
+#total{
+  font-family: "Dancing Script", cursive;
+  color: rgb(237,17,68);
 }
 
 
