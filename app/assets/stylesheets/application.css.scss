@@ -11,22 +11,11 @@
  * file per style scope.
  *
  *= require jquery-ui
- *= require_tree .
  *= require_self
- //= depend_on_asset "bootstrap/glyphicons-halflings-regular.eot"
- //= depend_on_asset "bootstrap/glyphicons-halflings-regular.woff"
- //= depend_on_asset "bootstrap/glyphicons-halflings-regular.ttf"
- //= depend_on_asset "bootstrap/glyphicons-halflings-regular.svg"
- //= depend_on_asset "sjds.jpg"
- //= depend_on_asset "bangkok.jpg"
- //= depend_on_asset "cartagena.jpg"
- //= depend_on_asset "carta.jpg"
- //= depend_on_asset "granada.jpg"
- //= depend_on_asset "market1.jpg"
- //= depend_on_asset "thailand1.jpg"
- //= depend_on_asset "thailand2.jpg"
- //= depend_on_asset "abstract.jpeg"
+ *= require_tree .
  */
+
+
 @import "bootstrap";
 /* Some Style from the Bootstrap Default Theme */
 body {
@@ -44,4 +33,3 @@ body {
   margin: 5px 0;
 }
 
-@import "customstyle";
