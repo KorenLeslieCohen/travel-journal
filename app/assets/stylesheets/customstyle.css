@@ -1,7 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-@import url(http://fonts.googleapis.com/css?family=Lobster+Two);
-@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Lobster Two', cursive;
+font-family: 'Josefin Sans', sans-serif;
 
 /*ACCORDION CALCULATOR*/
 h1, h2 {
@@ -140,12 +140,12 @@ h1 {
 
 .calc-body h1,
 .user-trips h1 {
-    font-family: 'Lobster Two';
+    font-family: 'Lobster Two', cursive;
     color: white;
 }
 
 .calc-body h2 {
-    font-family: 'Lobster Two';
+    font-family: 'Lobster Two', cursive;
     color: white;
 }
 
@@ -196,7 +196,7 @@ header {
 .navbar-nav a:visited,
 .navbar-header
 /*.navbar li a */{
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-size: 13px;
 }
 
@@ -263,20 +263,20 @@ a:hover {
 
 }
 .index-cover h1 {
-  font-family: 'Lobster Two';
+  font-family: 'Lobster Two', cursive;
   font-size: 100px;
 }
  
 .user-trips h4, 
 h4  {
-  font-family: 'Josefin Sans';
+  font-family: 'Josefin Sans', sans-serif;
   color: white;
   font-size: 40px;
   padding: 10px;
 }
 
 .new-entry-link {
-    font-family: 'Josefin Sans';
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 30px;
 }
 
@@ -284,7 +284,7 @@ h4  {
 label,
 .field input,
 .field textarea {
-    font-family: 'Josefin Sans';
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 15px;
 }
 
@@ -361,7 +361,7 @@ label,
 
 .navbar-default .navbar-brand {
   color: #ed1144;
-  font-family: 'Lobster Two';
+  font-family: 'Lobster Two', cursive;
 }
 
 #notice {
@@ -373,7 +373,7 @@ label,
 
 #accordion p {
   color: #ed1144;
-  font-family: 'Josefin Sans';
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 25px;
   line-height: 1.2;
   background: white;
@@ -389,7 +389,7 @@ label,
 
 .index-cover p {
   color: white;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
 }
 
