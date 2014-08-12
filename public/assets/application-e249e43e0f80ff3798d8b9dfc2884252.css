@@ -9479,29 +9479,36 @@ body {
 .theme-showcase > p > .btn {
   margin: 5px 0;
 }
-@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-@import url(http://fonts.googleapis.com/css?family=Lobster+Two);
-@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url("//fonts.googleapis.com/css?family=Shadows+Into+Light");
+@import url("//fonts.googleapis.com/css?family=Open+Sans");
+@import url("//fonts.googleapis.com/css?family=Lobster+Two");
+@import url("//fonts.googleapis.com/css?family=Josefin+Sans");
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script:700);
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display);
 /*ACCORDION CALCULATOR*/
-/* line 21, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 25, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 h1, h2 {
-  font-family: 'Coming Soon';
   font-size: 40px;
   color: #ed1144;
 }
 
-/* line 27, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 30, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+h2 {
+  color: #ffb9d1;
+}
+
+/* line 34, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 h2 {
   margin-bottom: 18px;
 }
 
-/* line 31, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 38, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 h1 {
   padding-top: 10px;
 }
 
-/* line 37, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 44, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 #accordion,
 #accordion ul,
 #accordion li,
@@ -9514,41 +9521,40 @@ h1 {
   text-decoration: none;
   line-height: 1;
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   position: relative;
 }
 
-/* line 49, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 56, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 #accordion a {
   line-height: 2.5;
 }
 
-/* line 53, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 60, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 #accordion {
   max-width: 600px;
 }
 
-/* line 56, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 63, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 #accordion > ul > li > a {
   /*padding-right: 40px;*/
   font-size: 25px;
   font-weight: bold;
   display: block;
   /*background: #bd0e36;*/
-  color: #ffffff;
-  border-bottom: 1px solid #ffffff;
+  color: white;
+  border-bottom: 1px solid white;
   text-transform: uppercase;
   /*position: relative;*/
 }
 
-/* line 68, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 75, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 #accordion > ul > li > a:hover {
-  color: #ed1144;
+  color: white;
 }
 
-/* line 72, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
-#accordion > ul > li > a > span {
-  /*background: #ed1144;*/
+/* line 79, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+#accordion > ul > li > a {
   padding: 10px;
   display: block;
   font-size: 17px;
@@ -9558,63 +9564,101 @@ h1 {
 /* background: rgb(231, 231, 231);*/
 /* Fall-back for browsers that don't support rgba */
 /* background: rgba(231, 231, 231, .8);*/
-/* line 85, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 91, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 #accordion > ul > li > a:hover {
   text-decoration: none;
 }
 
-/* line 88, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 94, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 #accordion > ul > li.active {
   border-bottom: none;
 }
 
-/* line 91, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 97, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 #accordion > ul > li.active > a {
-  color: #fff;
+  color: white;
 }
 
 /*is this being used for anything?*/
-/* line 96, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 102, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 #accordion > ul > li.active > a span {
   background: #bd0e36;
 }
 
-/* line 100, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 106, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 #accordion ul ul {
   display: none;
 }
 
-/* line 103, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 109, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 #accordion ul ul li {
   /*border: 1px solid #e0e0e0;*/
   border-top: 0;
 }
 
-/* line 107, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 113, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 #accordion ul ul a {
   padding: 10px;
   display: block;
-  /*color: #ed1144;*/
+  /*color: rgb(237,17,68);*/
   color: white;
   font-size: 13px;
 }
 
-/* line 114, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 120, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 #accordion ul ul a:hover {
   /*color: #bd0e36;*/
   color: white;
 }
 
-/* line 118, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
-#accordion ul ul li.odd {
-  /*background: #f4f4f4;*/
-  /*opacity: .7;*/
+/* line 124, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+#accordion span {
+  font-family: 'Playfair Display', serif;
+  color: white;
+  font-size: 17px;
+  font-style: italic;
+  font-weight: 900 !important;
 }
 
-/* line 122, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
-#accordion ul ul li.even {
-  /*background: #fff;*/
-  /*opacity: .7;*/
+/* line 133, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+#accordion ul.expenses {
+  color: slategrey !important;
+}
+
+/* line 137, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+li.odd span {
+  font-family: 'Playfair Display', serif !important;
+  color: black !important;
+  font-size: 14px !important;
+  font-style: italic !important;
+}
+
+/* line 143, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+li.even span {
+  font-family: 'Playfair Display', serif !important;
+  color: black !important;
+  font-size: 14px !important;
+  font-style: italic !important;
+}
+
+/* line 150, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+li.even input {
+  width: 187px !important;
+}
+
+/* line 153, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+li.odd input {
+  width: 187px !important;
+}
+
+/* line 156, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+#accordion li.even a, li.odd a {
+  background-color: #ffb9d1;
+}
+
+/* line 159, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+#accordion li.even, li.odd {
+  background-color: #ffb9d1;
 }
 
 /*#accordion > ul > li > ul {
@@ -9623,7 +9667,7 @@ h1 {
 /*  background: rgba(243, 243, 243, .3);
   border-radius: 10px;
 }*/
-/* line 135, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 172, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 #submit,
 #reset {
   padding: 10px;
@@ -9637,24 +9681,22 @@ h1 {
 /*body {
   background: black;
 }*/
-/* line 148, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 185, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .calc-body {
-  /*border: 2px solid #ed1144;*/
   max-width: 700px;
   margin-top: 30px;
 }
 
-/* line 156, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 194, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .calc-body h1,
 .user-trips h1 {
-  font-family: 'Lobster Two';
+  font-family: 'Poiret One', cursive;
   color: white;
 }
 
-/* line 161, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
-.calc-body h2 {
-  font-family: 'Lobster Two';
-  color: white;
+/* line 200, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+.best_in_place {
+  color: black !important;
 }
 
 /*.calc h2 #total {
@@ -9664,7 +9706,7 @@ h1 {
   padding: 5px;
 }*/
 /*APPLICATION*/
-/* line 180, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 218, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 html,
 body,
 header {
@@ -9673,17 +9715,17 @@ header {
   /*height: 100%;*/
 }
 
-/* line 186, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 224, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .navbar {
   background: none;
   border-color: none;
   /*  font-family: 'Gloria Hallelujah';
-    color: #ed1144;*/
+    color: rgb(237,17,68);*/
   border-radius: 0;
   border: 0px;
 }
 
-/* line 200, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 238, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .nav,
 .navbar,
 .navbar-default,
@@ -9694,7 +9736,7 @@ header {
   margin-bottom: 0;
 }
 
-/* line 212, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 250, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .nav a,
 .nav a:visited,
 .active a,
@@ -9702,11 +9744,11 @@ header {
 .navbar-nav a,
 .navbar-nav a:visited,
 .navbar-header {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-size: 13px;
 }
 
-/* line 218, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 256, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 a,
 a:visited {
   color: #ed1144;
@@ -9714,32 +9756,32 @@ a:visited {
   background: none;
 }
 
-/* line 224, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 262, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 a:hover {
   text-decoration: none;
   background: none;
 }
 
-/* line 231, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 269, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .nav a:hover,
 .active a:hover,
 .navbar-nav a:hover {
   color: #ed1144;
 }
 
-/* line 237, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 275, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .navbar img {
   border-radius: 50px;
   margin-bottom: 5px;
   padding: 5px;
 }
 
-/* line 244, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 282, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .navbar-default .navbar-nav > li > a {
   color: white;
 }
 
-/* line 248, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 286, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .navbar-default .navbar-nav > li > a:hover {
   color: #ed1144;
 }
@@ -9747,7 +9789,7 @@ a:hover {
 /*.divider {
   height: 50px;
 }*/
-/* line 257, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 295, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .index-cover {
   height: 750px;
   background: black;
@@ -9756,48 +9798,52 @@ a:hover {
   background-image: url(/assets/main-background.jpg);
 }
 
-/* line 266, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 304, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .index-cover,
 #index-cover {
   padding-top: 0;
   margin-top: 0;
 }
 
-/* line 274, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 310, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .index-cover h1,
-#index-cover h1,
-.index-cover h2,
-#index-cover h2 {
-  color: white;
+#index-cover h1 {
+  color: #fe045e;
+  font-family: 'Dancing Script', cursive;
+  font-size: 120px;
 }
 
-/* line 278, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
-.index-cover h1 {
-  font-family: 'Lobster Two';
-  font-size: 100px;
+/* line 317, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+.index-cover h3,
+#index-cover h3 {
+  color: #ffb9d1;
+  font-family: 'Lobster Two', cursive;
+  font-size: 40px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-/* line 284, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 325, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .user-trips h4,
 h4 {
-  font-family: 'Josefin Sans';
+  font-family: 'Dancing Script', cursive;
   color: white;
-  font-size: 40px;
+  font-size: 57px;
   padding: 10px;
+  text-shadow: -1px 0 #ed1144, 0 1px #ed1144, 1px 0 #ed1144, 0 -1px #ed1144;
 }
 
-/* line 291, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 333, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .new-entry-link {
-  font-family: 'Josefin Sans';
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 30px;
 }
 
-/* line 299, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 341, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .field label,
 label,
 .field input,
 .field textarea {
-  font-family: 'Josefin Sans';
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 15px;
 }
 
@@ -9805,7 +9851,7 @@ label,
   height: 50px;
 }
 */
-/* line 310, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 352, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .index-description {
   height: 750px;
   background: black;
@@ -9814,7 +9860,7 @@ label,
   /*background-image: image-url("thailand2.jpg");*/
 }
 
-/* line 318, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 360, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .index-authors {
   height: 750px;
   background: black;
@@ -9823,7 +9869,7 @@ label,
   background-image: url(/assets/carta.jpg);
 }
 
-/* line 326, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 368, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .calc {
   /*height: 100vh;*/
   /*  background-size: cover;
@@ -9836,14 +9882,14 @@ label,
   height: 400px;
 }
 */
-/* line 338, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 380, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .new-trip {
   height: 100vh;
   background-size: cover;
   background-image: url(/assets/market1.jpg);
 }
 
-/* line 344, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 386, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .edit-trip {
   height: 100vh;
   background-size: cover;
@@ -9851,7 +9897,7 @@ label,
 }
 
 /*profile page*/
-/* line 351, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 393, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .user-trips {
   /*height: 100vh;*/
   /*height: 100%;*/
@@ -9861,7 +9907,7 @@ label,
   background-image: no-repeat;
 }
 
-/* line 360, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 402, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .user-trips img {
   border-radius: 50px;
 }
@@ -9869,35 +9915,37 @@ label,
 /*.user-trips #accordion a {
   line-height: 1;
 }*/
-/* line 368, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 410, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .show-trip {
   height: 100vh;
   background-size: cover;
   background-image: url(/assets/thailand2.jpg);
 }
 
-/* line 375, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 417, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .navbar-default .navbar-brand {
   color: #ed1144;
-  font-family: 'Lobster Two';
+  font-family: 'Dancing Script', cursive;
 }
 
-/* line 380, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 422, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 #notice {
-  color: white;
-  /*background: black;*/
+  color: white !important;
+  font-size: 19px;
+  font-family: "Poiret One", serif;
   background: #ed1144;
   /* Fall-back for browsers that don't support rgba */
   background: rgba(237, 17, 68, 0.6);
+  width: 502px;
 }
 
-/* line 387, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 431, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 #accordion p {
   color: #ed1144;
-  font-family: 'Josefin Sans';
+  font-family: 'Poiret One', cursive;
   font-size: 25px;
   line-height: 1.2;
-  background: white;
+  background: rgba(255, 255, 255, 0.75);
 }
 
 /*.modal-trip {
@@ -9907,20 +9955,20 @@ label,
 .modal-trip:click {
   opacity: 1;
 }*/
-/* line 403, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 447, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .index-cover p {
   color: white;
-  font-family: 'Open Sans';
-  font-size: 20px;
+  font-family: 'Poiret One', cursive;
+  font-size: 27px;
 }
 
-/* line 409, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 453, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .index-cover p span {
   color: grey;
   opacity: 0;
 }
 
-/* line 414, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 458, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 input {
   color: black;
   /* height: 75px;
@@ -9931,7 +9979,7 @@ input {
 
 /*.pink-link a,
 .pink-link a:visited {
-  color: #ed1144;
+  color: rgb(237,17,68);
 }
 
 .pink-link a:hover {
@@ -9939,7 +9987,7 @@ input {
 }*/
 /*MODAL*/
 /* About Modal */
-/* line 436, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 480, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .modalDialog {
   position: fixed;
   overflow: scroll;
@@ -9949,7 +9997,7 @@ input {
   bottom: 0;
   left: 0;
   background: #222622;
-  /*background: white;*/
+  /*background: rgb(255, 255, 255);*/
   /*background-image: image-url("main-background.jpg");*/
   /*background-image: cover;*/
   background: -webkit-linear-gradient(black, #ed1144, green, grey);
@@ -9972,26 +10020,26 @@ input {
   /*font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 }
 
-/* line 465, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 509, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .modalDialog:target {
   opacity: 1;
   pointer-events: auto;
   transition-duration: 1.6s;
 }
 
-/* line 471, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 515, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .modalDialog > .modal-box {
   width: 50%;
   position: relative;
   /*margin: 10% auto;*/
   /*padding: 5px 20px 13px 20px;*/
   /*border-radius: 0px;*/
-  color: #ffffff;
+  color: white;
 }
 
-/* line 480, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 524, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .modalDialog h2, h3 {
-  color: #ffffff;
+  color: white;
   padding-top: 10px;
 }
 
@@ -10002,17 +10050,17 @@ input {
   text-align: center;
 }*/
 /*h3 {
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: 'Coming Soon';
 }*/
-/* line 498, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 542, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .close {
   color: white;
 }
 
-/* line 502, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 546, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .close a {
-  color: #ffffff;
+  color: white;
   line-height: 25px;
   position: absolute;
   right: -12px;
@@ -10024,17 +10072,17 @@ input {
   text-decoration: none;
 }
 
-/* line 515, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 559, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .nav, .nav a {
   color: white;
 }
 
-/* line 519, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 563, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .close:hover {
-  color: #ffffff;
+  color: white;
 }
 
-/* line 522, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 566, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 #openModal .field input,
 #openModal textarea {
   color: black;
@@ -10051,7 +10099,7 @@ input {
   font-size: 20px;
 }
 
-/* line 539, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 583, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 #openModal .actions input {
   padding: 10px;
   margin-top: 20px;
@@ -10063,7 +10111,7 @@ input {
 
 /*MODAL2*/
 /* About Modal */
-/* line 551, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 595, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .modalDialog2 {
   position: fixed;
   overflow: scroll;
@@ -10075,16 +10123,16 @@ input {
   bottom: 0;
   left: 0;
   background: #222622;
-  /*background: white;*/
+  /*background: rgb(255, 255, 255);*/
   /*background-image: image-url("main-background.jpg");*/
   /*background-image: cover;*/
-  background: -webkit-linear-gradient(black, #ed1144, green, grey);
+  background: -webkit-linear-gradient(black, white, green, grey);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(black, #ed1144, green, grey);
+  background: -o-linear-gradient(black, white, green, grey);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(black, #ed1144, green, grey);
+  background: -moz-linear-gradient(black, white, green, grey);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(black, #ed1144, green, grey);
+  background: linear-gradient(black, white, green, grey);
   /* Standard syntax */
   background: #222622;
   z-index: 99999;
@@ -10098,26 +10146,26 @@ input {
   /*font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 }
 
-/* line 582, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 626, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .modalDialog2:target {
   opacity: .95;
   pointer-events: auto;
   transition-duration: 1.6s;
 }
 
-/* line 588, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 632, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .modalDialog2 > .modal-box2 {
   width: 50%;
   position: relative;
   /*margin: 10% auto;*/
   /*padding: 5px 20px 13px 20px;*/
   /*border-radius: 0px;*/
-  color: #ffffff;
+  color: white;
 }
 
-/* line 597, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 641, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .modalDialog2 h2, h3 {
-  color: #ffffff;
+  color: white;
   padding-top: 10px;
 }
 
@@ -10128,17 +10176,17 @@ input {
   text-align: center;
 }*/
 /*h3 {
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: 'Coming Soon';
 }*/
-/* line 615, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 659, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .close2 {
   color: white;
 }
 
-/* line 619, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 663, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .close2 a {
-  color: #ffffff;
+  color: white;
   line-height: 25px;
   position: absolute;
   right: -12px;
@@ -10150,17 +10198,17 @@ input {
   text-decoration: none;
 }
 
-/* line 632, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 676, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .nav, .nav a {
   color: white;
 }
 
-/* line 636, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 680, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .close2:hover {
-  color: #ffffff;
+  color: white;
 }
 
-/* line 639, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 683, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 #openModal2 .field input,
 #openModal2 textarea {
   color: black;
@@ -10174,7 +10222,7 @@ input {
   font-size: 20px;
 }
 
-/* line 651, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 695, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 #openModal2 .actions input {
   padding: 10px;
   margin-top: 20px;
@@ -10184,18 +10232,30 @@ input {
   border: 1px solid white;
 }
 
-/* line 660, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 704, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .new-entry-link a {
   color: white;
   border: 1px solid white;
   padding: 5px;
   padding-top: 10px;
+  background: #ed1144;
 }
 
-/* line 667, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+/* line 712, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
 .new-entry-link a:hover {
+  color: white;
+  border-color: white;
+}
+
+/* line 717, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+#submit:hover, #reset:hover {
+  background-color: rgba(237, 17, 68, 0.65);
+}
+
+/* line 721, /Users/korenlcohen/Travel-App/app/assets/stylesheets/customstyle.css.scss */
+#total {
+  font-family: "Dancing Script", cursive;
   color: #ed1144;
-  border-color: #ed1144;
 }
 /* line 1, /Users/korenlcohen/Travel-App/app/assets/stylesheets/scaffolds.css.scss */
 body {
@@ -10226,12 +10286,12 @@ a {
 }
 /* line 23, /Users/korenlcohen/Travel-App/app/assets/stylesheets/scaffolds.css.scss */
 a:visited {
-  color: #666;
+  color: white;
 }
 /* line 26, /Users/korenlcohen/Travel-App/app/assets/stylesheets/scaffolds.css.scss */
 a:hover {
   color: #fff;
-  background-color: #000;
+  background-color: rgba(255, 185, 209, 0.75);
 }
 
 /* line 33, /Users/korenlcohen/Travel-App/app/assets/stylesheets/scaffolds.css.scss */
