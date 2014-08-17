@@ -34,7 +34,7 @@
             <p>
               <strong>TO PACK:</strong>
               <%trip.supplies.each do |supply|%>
-              <span class="best_in_place"><%= supply.name%><%= "," unless supply == trip.supplies.last %><span>
+              <span style="color:black"><%= supply.name%><%= "," unless supply == trip.supplies.last %><span>
               <%end%>
               <%= best_in_place trip, :to_pack %>
             </p>
