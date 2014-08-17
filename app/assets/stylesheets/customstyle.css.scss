@@ -300,10 +300,10 @@ label,
 
 /* PROFILE PAGE */
 .user-trips {
-  background-size: cover;
-  height: 1500px;
   background-image: image-url("thailand2.jpg");
   background-image: no-repeat;
+  background-size: cover;
+  min-height: 1300px;
 }
 
 .user-trips img {
@@ -610,3 +610,6 @@ div {
   }
 }
 
+.user-trips h2 {
+  padding-bottom: 600px;
+}

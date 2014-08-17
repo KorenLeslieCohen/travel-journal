@@ -14,8 +14,6 @@
   </div>
   <% if @user.trips.length == 0 %>
     <h2>You haven't planned any trips yet.</h2>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   <% else %>
     <div class="calc-body">
       <% @user.trips.reverse.each do |trip| %>
