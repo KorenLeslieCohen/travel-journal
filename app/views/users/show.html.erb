@@ -1,127 +1,79 @@
 <center>
 <div class="user-trips">
-<%= render 'layouts/header' %>
-
-<p id="notice"><%= notice %></p>
-
-<p>
-  <h1><%= image_tag current_user.image %><br><%= @user.name %>
-   </h1>
-</p>
-<br>
-<h4>Your Trips</h4>
-<br><br>
-<div class="new-entry-link">
-<%#= render "layouts/new" %>
-
- <%= render "layouts/new" %>
- <%= render "layouts/calc" %>
-
-</div>
-
-<% if @user.trips.length == 0 %>
-<h2>You haven't planned any trips yet.</h2>
-<!-- <h2> --><%#= link_to 'Plan First Trip', new_trip_path %> <!-- </h2> -->
-    <h2>  <%#= render "layouts/new" %> </h2>
-<br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<% else %>
-
-<%#= link_to 'Back', users_path %>
-
-
-<div class="calc-body">
-<% @user.trips.reverse.each do |trip| %>
-
-<form id='accordion'>
-
-<ul>
- <%#= best_in_place @user, :name %>
-
-   <li><a><span><%= trip.trip_name  %></span></a>
-      <ul>
-       <li>
-
-       <p>
-       <li><%#= render "layouts/edit" %></li>
-<!--   <h2>
-  <%#= trip.trip_name %>
-</h2> -->
-
-<p>
-  <strong>LOCATION:</strong> 
-  <%#= trip.location %><%= best_in_place trip, :location %>
-</p>
-
-<p>
-  <strong>DATE:</strong>
-  <%#= trip.date %><%= best_in_place trip, :date %>
-</p>
-
-
-<p>
-  <strong>TO PACK:</strong>
-  <%trip.supplies.each do |supply|%>
-  <%= supply.name%><%= "," unless supply == trip.supplies.last %>
-  <%end%>
-  <%= best_in_place trip, :to_pack %>
-</p>
-
-
-<p>
-  <strong>TO DO:</strong>
-  <%= best_in_place trip, :to_do %>
-</p>
-
-<p>
-  <strong>BUDGET: $</strong>
-  <%= best_in_place trip, :budget %>
-</p>
-
-<p>
-  <strong>THINGS I DID:</strong>
-
-  <%= best_in_place trip, :things_i_did %>
-</p>
-
-<p>
-  <strong>THINGS I LIKED:</strong>
-  <%= best_in_place trip, :things_i_liked %>
-</p>
-
-<p>
-  <strong>TTHINGS I DIDN'T LIKE:</strong>
-  <%= best_in_place trip, :things_i_didnt_like %>
-</p>
-
-
-<div class="pink-link">
-
-<%= link_to 'DELETE TRIP', trip_path(trip), method: :delete, data: { confirm: 'Are you sure?' } %>
-
+  <%= render 'layouts/header' %>
+  <p id="notice"><%= notice %></p>
+  <p>
+    <h1><%= image_tag current_user.image %><br><%= @user.name %></h1>
+  </p>
+  <br>
+  <h4>Your Trips</h4>
+  <br><br>
+  <div class="new-entry-link">
+    <%= render "layouts/new" %>
+    <%= render "layouts/calc" %>
   </div>
-
-      </ul>
-    </li>
-
-   </ul>
-
-
-   <% end %>
-   </form>
-   </div>
-  <!--  <h2> --><%#= link_to 'New Trip', new_trip_path %> <!-- </h2> -->
-    <h2>  <%#= render "layouts/new" %> </h2>
+  <% if @user.trips.length == 0 %>
+    <h2>You haven't planned any trips yet.</h2>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
- -->  <% end %>
-  
+  <% else %>
+    <div class="calc-body">
+      <% @user.trips.reverse.each do |trip| %>
+      <form id='accordion'>
+      <ul>
+        <li><a><span><%= trip.trip_name  %></span></a>
+          <ul>
+            <p>
+              <strong>LOCATION:</strong> 
+              <%= best_in_place trip, :location %>
+            </p>
 
+            <p>
+              <strong>DATE:</strong>
+              <%= best_in_place trip, :date %>
+            </p>
 
+            <p>
+              <strong>TO PACK:</strong>
+              <%trip.supplies.each do |supply|%>
+              <%= supply.name%><%= "," unless supply == trip.supplies.last %>
+              <%end%>
+              <%= best_in_place trip, :to_pack %>
+            </p>
 
+            <p>
+              <strong>TO DO:</strong>
+              <%= best_in_place trip, :to_do %>
+            </p>
 
-   </div>
+            <p>
+              <strong>BUDGET: $</strong>
+              <%= best_in_place trip, :budget %>
+            </p>
+
+            <p>
+              <strong>THINGS I DID:</strong>
+              <%= best_in_place trip, :things_i_did %>
+            </p>
+
+            <p>
+              <strong>THINGS I LIKED:</strong>
+              <%= best_in_place trip, :things_i_liked %>
+            </p>
+
+            <p>
+              <strong>TTHINGS I DIDN'T LIKE:</strong>
+              <%= best_in_place trip, :things_i_didnt_like %>
+            </p>
+
+            <%= link_to 'DELETE TRIP', trip_path(trip), method: :delete, data: { confirm: 'Are you sure?' } %>
+          </ul>
+        </li>
+      </ul>
+    <% end %>
+    </form>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <% end %>
+</div>
 </center>
