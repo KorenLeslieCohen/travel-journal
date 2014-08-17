@@ -17,7 +17,7 @@ Log in with Facebook and enter your new trip. Use the calculator to stay on budg
 My Travel Journal was created by:
 
 Koren Leslie Cohen: <a href="http://twitter.com/korenlc" target="_blank">Twitter</a>, <a href="http://korenlc.com" target="_blank">Blog</a>, <a href="http://linkedin.com/pub/koren-leslie-cohen/26/178/726/" target="_blank">LinkedIn</a><br>
-Christina Leuci: <a href="http://twitter.com/christinaleuci" target="_blank">Twitter</a>, <a href="www.linkedin.com/pub/christina-leuci/78/756/a57" target="_blank">LinkedIn</a><br> 
+Christina Leuci: <a href="http://twitter.com/christinaleuci" target="_blank">Twitter</a>, <a href="http://linkedin.com/pub/christina-leuci/78/756/a57" target="_blank">LinkedIn</a><br> 
 
 ## License
 
