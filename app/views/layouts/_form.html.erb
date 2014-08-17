@@ -1,14 +1,10 @@
 <div class="calc-modal">
-<!-- <h1>Estimate Your Budget</h1> -->
-<div class="calc">
-
-<center>
-<div class="calc-body">
- 
+  <div class="calc">
+    <center>
+    <div class="calc-body">
+    </div>
+    </center>
 </div>
-</center>
-</div>
-<!--  <h1>&hearts;</h1> -->
 
 <h1>New Journal Entry</h1>
 <p>Complete the form to create a new travel journal entry!</p>
@@ -39,42 +35,28 @@
     <%= f.label :date, "DATE" %><br>
     <%= f.text_field :date, id: "trip-date" %>
   </div>
-<!--   <div class="field"> -->
-    <%#= f.label :user_id %>
-    <%#= f.number_field :user_id %>
-<!--   </div> -->
-<div class="field checkbox-field">
+  <div class="field checkbox-field">
     <%= f.label :supplies, "THINGS I WANT TO PACK"%><br>
     <%= f.collection_check_boxes :supply_ids, Supply.all, :id, :name, {:item_wrapper_class => 'checkbox_container'}%>
-    <%#= f.fields_for(:supplies, Supply.new) do |supply_form| %>
-      <!-- <p>Add a new tag:</p><br> -->
-      <%#= supply_form.label :name %>
-      <%#= supply_form.text_field :name %>
-    <%# end %>
   </div>
-
-    <div class="field">
+  <div class="field">
     <%= f.label :to_pack, "ADDITIONAL PACKING ITEMS" %><br>
     <%= f.text_field :to_pack %>
   </div>
-
   <div class="field">
     <%= f.label :to_do, "THINGS I WANT TO DO" %><br>
     <%= f.text_area :to_do %>
   </div>
- 
   <div class="field">
-
     <%= f.label :budget, "TRIP BUDGET" %><br>
     <%= f.number_field :budget %>
-     <%= f.hidden_field :user_id, :value => session["user_id"] %>
+    <%= f.hidden_field :user_id, :value => session["user_id"] %>
   </div>
   <h1>Trip Created!</h1>
   <div class="actions" class="submit">
     <%= f.submit "ADD TO JOURNAL" %>
   </div>
-<% end %>
-
+  <% end %>
 </div>
 
 </div>

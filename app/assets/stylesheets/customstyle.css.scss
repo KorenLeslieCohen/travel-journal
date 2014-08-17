@@ -1,4 +1,3 @@
-
 //= depend_on_asset "main-background.jpg"
 //= depend_on_asset "thailand1.jpg"
 //= depend_on_asset "thailand2.jpg"
@@ -68,11 +67,6 @@ h1 {
   font-weight: 300;
 }
 
-
- /* background: rgb(231, 231, 231);*/ /* Fall-back for browsers that don't support rgba */
- /* background: rgba(231, 231, 231, .8);*/
-
-
 #accordion > ul > li > a:hover {
   text-decoration: none;
 }
@@ -83,7 +77,6 @@ h1 {
   color: rgb(255, 255, 255);
 }
 
-/*is this being used for anything?*/
 #accordion > ul > li.active > a span {
   background: rgb(189,14,54);
 }
@@ -95,16 +88,18 @@ h1 {
 #accordion ul ul li {
   border-top: 0;
 }
+
 #accordion ul ul a {
   padding: 10px;
   display: block;
-  /*color: rgb(237,17,68);*/
   color: rgb(255, 255, 255);
   font-size: 13px;
 }
+
 #accordion ul ul a:hover {
   color: rgb(255, 255, 255);
 }
+
 #accordion span {
   font-family: 'Playfair Display', serif;
   color: rgb(255, 255, 255);
@@ -123,6 +118,7 @@ li.odd span{
   font-size: 14px !important;
   font-style: italic !important;
 }
+
 li.even span{
   font-family: 'Playfair Display', serif !important;
   color: rgb(000, 000, 000) !important;
@@ -133,22 +129,19 @@ li.even span{
 li.even input{
   width: 187px !important;
 }
+
 li.odd input{
   width: 187px !important;
 }
+
 #accordion li.even a, li.odd a{
   background-color: rgb(255, 185, 209);
 }
+
 #accordion li.even, li.odd{
   background-color: rgb(255, 185, 209);
-  // background: rgb(237,17,68) !important;
+  background: rgb(237,17,68) !important;
 }
-
-/*#accordion > ul > li > ul {
-    background: rgb(243, 243, 243);  *//*Fall-back for browsers that don't support rgba */
-/*  background: rgba(243, 243, 243, .3);
-  border-radius: 10px;
-}*/
 
 #submit,
 #reset {
@@ -161,8 +154,6 @@ li.odd input{
 }
 
 .calc-body {
-  // border: 3px double rgb(237,17,68);
-  // border-spacing: 10px 50px;
   max-width: 700px;
   margin-top: 30px;
 }
@@ -172,7 +163,6 @@ li.odd input{
     font-family: 'Poiret One', cursive;
     color: rgb(255, 255, 255);
 }
-
 
 .best_in_place {
   color: rgb(000, 000, 000) !important;
@@ -286,16 +276,16 @@ h4  {
 }
 
 .new-entry-link {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 30px;
 }
 
 .field label, 
 label,
 .field input,
 .field textarea {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 15px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 15px;
 }
 
 .index-description {
@@ -304,29 +294,9 @@ label,
   background-attachment: fixed;
 }
 
-/*.index-authors {
-  height: 750px;
-  background: black;
-  background-attachment: fixed;
-  background-size: cover;
-  background-image: image-url("carta.jpg");
-}*/
-
 .calc {
   height: 100%;
 }
-
-/*.new-trip {
-  height: 100vh;
-  background-size: cover;
-  background-image: image-url("market1.jpg");
-}*/
-
-/*.edit-trip {
-  height: 100vh;
-  background-size: cover;
-  background-image: image-url("thailand1.jpg");
-}*/
 
 /* PROFILE PAGE */
 .user-trips {
@@ -339,12 +309,6 @@ label,
 .user-trips img {
   border-radius: 50px;
 }
-
-/*.show-trip {
-  height: 100vh;
-  background-size: cover;
-  background-image: image-url("thailand2.jpg");
-}*/
 
 .navbar-default .navbar-brand {
   color: rgb(237,17,68);
@@ -385,7 +349,6 @@ input {
 
 /*MODAL*/
 
-/* About Modal */
 .modalDialog {
   position: fixed;
   overflow: scroll;
@@ -469,7 +432,6 @@ input {
 
 /*MODAL2*/
 
-/* About Modal */
 .modalDialog2 {
   position: fixed;
   overflow: scroll;

@@ -7,19 +7,12 @@
     </button>
   </div>
   <div class="navbar-collapse collapse navbar-responsive-collapse">
-<!--     <ul class="nav navbar-nav">
-      <li class="active">
-
-
-</ul> -->
     <ul class="nav navbar-nav navbar-right">
     <% if current_user %>
-
       <li><%= link_to "LOG OUT", logout_path %></li></li>
     <% else %>
-    <li><%= link_to "LOG IN WITH FACEBOOK", facebook_login_path %></li>
-<% end %>
-
+      <li><%= link_to "LOG IN WITH FACEBOOK", facebook_login_path %></li>
+    <% end %>
     </ul>
   </div>
 </div>
