@@ -6,20 +6,6 @@
 //= depend_on_asset "bootstrap/glyphicons-halflings-regular.woff"
 //= depend_on_asset "bootstrap/glyphicons-halflings-regular.ttf"
 //= depend_on_asset "bootstrap/glyphicons-halflings-regular.svg"
-//= depend_on_asset "bangkok.jpg"
-//= depend_on_asset "cartagena.jpg"
-//= depend_on_asset "carta.jpg"
-//= depend_on_asset "granada.jpg"
-//= depend_on_asset "market1.jpg"
-//= depend_on_asset "abstract.jpeg"
-
-@import url('//fonts.googleapis.com/css?family=Shadows+Into+Light');
-@import url('//fonts.googleapis.com/css?family=Open+Sans');
-@import url('//fonts.googleapis.com/css?family=Lobster+Two');
-@import url('//fonts.googleapis.com/css?family=Josefin+Sans');
-@import url(http://fonts.googleapis.com/css?family=Dancing+Script:700);
-@import url(http://fonts.googleapis.com/css?family=Poiret+One);
-@import url(http://fonts.googleapis.com/css?family=Playfair+Display);
 
 /*ACCORDION CALCULATOR*/
 h1, h2{
@@ -38,6 +24,7 @@ h2 {
 h1 {
   padding-top: 10px;
 }
+
 #accordion,
 #accordion ul,
 #accordion li,
@@ -65,11 +52,9 @@ h1 {
   font-size: 25px;
   font-weight: bold;
   display: block;
-  /*background: #bd0e36;*/
   color: rgb(255, 255, 255);
   border-bottom: 1px solid rgb(255, 255, 255);
   text-transform: uppercase;
-  /*position: relative;*/
 }
 
 #accordion > ul > li > a:hover {
@@ -106,8 +91,8 @@ h1 {
 #accordion ul ul {
   display: none;
 }
+
 #accordion ul ul li {
-  /*border: 1px solid #e0e0e0;*/
   border-top: 0;
 }
 #accordion ul ul a {
@@ -118,16 +103,14 @@ h1 {
   font-size: 13px;
 }
 #accordion ul ul a:hover {
-  /*color: #bd0e36;*/
   color: rgb(255, 255, 255);
 }
 #accordion span {
-    font-family: 'Playfair Display', serif;
-    color: rgb(255, 255, 255);
-    font-size: 17px;
-    font-style: italic;
-    font-weight:900 !important;
-    
+  font-family: 'Playfair Display', serif;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-style: italic;
+  font-weight:900 !important;
 }
 
 #accordion ul.expenses{
@@ -167,7 +150,6 @@ li.odd input{
   border-radius: 10px;
 }*/
 
-
 #submit,
 #reset {
   padding: 10px;
@@ -178,16 +160,11 @@ li.odd input{
   border: 1px solid rgb(255, 255, 255);
 }
 
-/*body {
-  background: black;
-}*/
-
 .calc-body {
   // border: 3px double rgb(237,17,68);
   // border-spacing: 10px 50px;
   max-width: 700px;
   margin-top: 30px;
-
 }
 
 .calc-body h1,
@@ -201,16 +178,6 @@ li.odd input{
   color: rgb(000, 000, 000) !important;
 }
 
-/*.calc h2 #total {
-  font-size: 10px;
-}*/
-
-
-
-/*input {
-  padding: 5px;
-}*/
-
 /*APPLICATION*/
 
 html,
@@ -218,14 +185,11 @@ body,
 header {
   padding: 0;
   margin: 0;
-      /*height: 100%;*/
 }
 
 .navbar {
   background: none;
   border-color: none;
-/*  font-family: 'Gloria Hallelujah';
-  color: rgb(237,17,68);*/
   border-radius: 0;
   border: 0px;
 }
@@ -246,17 +210,16 @@ header {
 .active a:visited,
 .navbar-nav a,
 .navbar-nav a:visited,
-.navbar-header
-/*.navbar li a */{
+.navbar-header {
   font-family: 'Open Sans', sans-serif;
   font-size: 13px;
 }
 
 a,
 a:visited {
-    color: rgb(237,17,68);
-    text-decoration: none;
-    background: none;
+  color: rgb(237,17,68);
+  text-decoration: none;
+  background: none;
 }
 
 a:hover {
@@ -270,13 +233,10 @@ a:hover {
     color: rgb(237,17,68);
 }
 
-
-
 .navbar img {
   border-radius: 50px;
   margin-bottom: 5px;
   padding:5px;
-
 }
  
 .navbar-default .navbar-nav > li > a {
@@ -286,11 +246,6 @@ a:hover {
 .navbar-default .navbar-nav > li > a:hover {
     color: rgb(237,17,68);
 }
-
-
-/*.divider {
-  height: 50px;
-}*/
 
 .index-cover {
   height: 750px;
@@ -343,76 +298,53 @@ label,
     font-size: 15px;
 }
 
-/*#field {
-  height: 50px;
-}
-*/
-
-
 .index-description {
   height: 750px;
   background: black;
   background-attachment: fixed;
-  /*background-size: cover;*/
-    /*background-image: image-url("thailand2.jpg");*/
 }
 
-.index-authors {
+/*.index-authors {
   height: 750px;
   background: black;
   background-attachment: fixed;
   background-size: cover;
-      background-image: image-url("carta.jpg");
-}
+  background-image: image-url("carta.jpg");
+}*/
 
 .calc {
-  /*height: 100vh;*/
-/*  background-size: cover;
-     background-image: image-url("main-background.jpg");*/
-     /*background: #cccccc;*/
-     height: 100%;
+  height: 100%;
 }
 
-/*.calc-modal {
-  height: 400px;
-}
-*/
-.new-trip {
-    height: 100vh;
+/*.new-trip {
+  height: 100vh;
   background-size: cover;
-     background-image: image-url("market1.jpg");
-}
+  background-image: image-url("market1.jpg");
+}*/
 
-.edit-trip {
-    height: 100vh;
+/*.edit-trip {
+  height: 100vh;
   background-size: cover;
-     background-image: image-url("thailand1.jpg");
-}
+  background-image: image-url("thailand1.jpg");
+}*/
 
-/*profile page*/
+/* PROFILE PAGE */
 .user-trips {
-/*height: 100vh;*/
-/*height: 100%;*/
   background-size: cover;
   height: 1500px;
-       background-image: image-url("thailand2.jpg");
-       background-image: no-repeat;
+  background-image: image-url("thailand2.jpg");
+  background-image: no-repeat;
 }
 
 .user-trips img {
   border-radius: 50px;
 }
 
-/*.user-trips #accordion a {
-  line-height: 1;
-}*/
-
-.show-trip {
+/*.show-trip {
   height: 100vh;
   background-size: cover;
-  
-       background-image: image-url("thailand2.jpg");
-}
+  background-image: image-url("thailand2.jpg");
+}*/
 
 .navbar-default .navbar-brand {
   color: rgb(237,17,68);
@@ -436,14 +368,6 @@ label,
   background: rgba(255, 255, 255, 0.75);
 }
 
-/*.modal-trip {
-  opacity: 0;
-}
-
-.modal-trip:click {
-  opacity: 1;
-}*/
-
 .index-cover p {
   color: rgb(255, 255, 255);
   font-family: 'Poiret One', cursive;
@@ -457,22 +381,7 @@ label,
 
 input {
   color: black;
- /* height: 75px;
-  border-radius: 5px;
-  font-size: 14px;
-  width: 300px;*/
 }
-
-/*.pink-link a,
-.pink-link a:visited {
-  color: rgb(237,17,68);
-}
-
-.pink-link a:hover {
-  color: black;
-}*/
-
-
 
 /*MODAL*/
 
@@ -480,30 +389,21 @@ input {
 .modalDialog {
   position: fixed;
   overflow: scroll;
-  /*font-family: Arial, Helvetica, sans-serif;*/
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   background: rgb(34,38,34);
-/*background: rgb(255, 255, 255);*/
-  /*background-image: image-url("main-background.jpg");*/
-  /*background-image: cover;*/
-
   background: -webkit-linear-gradient(black, rgb(237,17,68), green, grey); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(black, rgb(237,17,68), green, grey); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(black, rgb(237,17,68), green, grey); /* For Firefox 3.6 to 15 */
   background: linear-gradient(black, rgb(237,17,68), green, grey); /* Standard syntax */
-background: rgb(34,38,34);
+  background: rgb(34,38,34);
   z-index: 99999;
   opacity:0;
   transition-duration: 1.6s;
   transition-property: opacity;
-/*  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;*/
   pointer-events: none;
-  /*font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 }
 
 .modalDialog:target {
@@ -515,9 +415,6 @@ background: rgb(34,38,34);
 .modalDialog > .modal-box {
   width: 50%;
   position: relative;
-  /*margin: 10% auto;*/
-  /*padding: 5px 20px 13px 20px;*/
-  /*border-radius: 0px;*/
   color: rgb(255, 255, 255);
 }
 
@@ -525,19 +422,6 @@ background: rgb(34,38,34);
   color: rgb(255, 255, 255);
   padding-top: 10px;
 }
-
-/*h1 {
-  text-align: center;
-}*/
-
-/*.modal-text h1 {
-  text-align: center;
-}*/
-/*h3 {
-  color: rgb(255, 255, 255);
-  font-family: 'Coming Soon';
-}*/
-
 
 .close {
   color: rgb(255, 255, 255);
@@ -565,17 +449,11 @@ background: rgb(34,38,34);
 #openModal .field input,
 #openModal textarea {
   color: black;
-  /*border-radius: 5px;*/
-  /*width: 300px;*/
- padding-left: 100px;
- padding-right: 100px;
-
- padding-top: 5px;
- padding-bottom: 5px;
-
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   background: rgb(255, 255, 255);
-     /*background: rgb(237, 17, 68);  Fall-back for browsers that don't support rgba */
-  /*background: rgba(237, 17, 68, .6);*/
   border: none;
   font-size: 20px;
 }
@@ -596,31 +474,19 @@ background: rgb(34,38,34);
   position: fixed;
   overflow: scroll;
   width: 400px;
-  /*height: 1000px;*/
-  /*font-family: Arial, Helvetica, sans-serif;*/
   top: 0;
-  /*right: 0;*/
   bottom: 0;
   left: 0;
-  background: rgb(34,38,34);
-/*background: rgb(255, 255, 255);*/
-  /*background-image: image-url("main-background.jpg");*/
-  /*background-image: cover;*/
-
   background: -webkit-linear-gradient(black, rgb(255, 255, 255), green, grey); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(black, rgb(255, 255, 255), green, grey); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(black, rgb(255, 255, 255), green, grey); /* For Firefox 3.6 to 15 */
   background: linear-gradient(black, rgb(255, 255, 255), green, grey); /* Standard syntax */
-background: rgb(34,38,34);
+  background: rgb(34,38,34);
   z-index: 99999;
   opacity:0;
   transition-duration: 1.6s;
   transition-property: opacity;
-/*  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;*/
   pointer-events: none;
-  /*font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 }
 
 .modalDialog2:target {
@@ -632,9 +498,6 @@ background: rgb(34,38,34);
 .modalDialog2 > .modal-box2 {
   width: 50%;
   position: relative;
-  /*margin: 10% auto;*/
-  /*padding: 5px 20px 13px 20px;*/
-  /*border-radius: 0px;*/
   color: rgb(255, 255, 255);
 }
 
@@ -642,19 +505,6 @@ background: rgb(34,38,34);
   color: rgb(255, 255, 255);
   padding-top: 10px;
 }
-
-/*h1 {
-  text-align: center;
-}*/
-
-/*.modal-text h1 {
-  text-align: center;
-}*/
-/*h3 {
-  color: rgb(255, 255, 255);
-  font-family: 'Coming Soon';
-}*/
-
 
 .close2 {
   color: rgb(255, 255, 255);
@@ -682,12 +532,8 @@ background: rgb(34,38,34);
 #openModal2 .field input,
 #openModal2 textarea {
   color: black;
-  /*border-radius: 5px;*/
-  /*width: 600px;*/
   padding: 5px;
   background: rgb(255, 255, 255);
-     /*background: rgb(237, 17, 68);  Fall-back for browsers that don't support rgba */
-  /*background: rgba(237, 17, 68, .6);*/
   border: none;
   font-size: 20px;
 }
@@ -723,4 +569,82 @@ background: rgb(34,38,34);
   color: rgb(237,17,68);
 }
 
+#index-cover h1 {
+  padding-top: 180px;
+  padding-bottom: 100px;
+}
+
+#index-cover h3 {
+  padding-bottom: 70px;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  color: #000;
+  &:visited {
+    color: rgb(255, 255, 255);
+  }
+  &:hover {
+    color: #fff;
+    background-color: rgba(255, 185, 209,.75);
+  }
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
 

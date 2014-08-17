@@ -3,7 +3,6 @@
   <% if Trip.new.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(Trip.new.errors.count, "error") %> prohibited this trip from being saved:</h2>
-
       <ul>
       <% current_user.trips.errors.full_messages.each do |message| %>
         <li><%= message %></li>
@@ -11,9 +10,8 @@
       </ul>
     </div>
   <% end %>
+
 <h1>New Journal Entry</h1>
-
-
   <div class="field">
     <%= f.label :trip_name, "JOURNAL ENTRY NAME" %><br>
     <%= f.text_field :trip_name %>
@@ -22,24 +20,13 @@
     <%= f.label :location, "TRIP LOCATION(S)" %><br>
     <%= f.text_field :location %>
   </div>
-<!--   <div class="field"> -->
-    <%#= f.label :user_id %>
-    <%#= f.number_field :user_id %>
-<!--   </div> -->
-
     <div class="field">
     <%= f.label :date, "DATE" %><br>
     <%= f.text_field :date %>
   </div>
-
-<div class="field checkbox-field">
+  <div class="field checkbox-field">
     <%= f.label :supplies, "THINGS I WANT TO PACK"%><br>
     <%= f.collection_check_boxes :supply_ids, Supply.all, :id, :name, {:item_wrapper_class => 'checkbox_container'}%>
-    <%#= f.fields_for(:supplies, Supply.new) do |supply_form| %>
-      <!-- <p>Add a new tag:</p><br> -->
-      <%#= supply_form.label :name %>
-      <%#= supply_form.text_field :name %>
-    <%# end %>
   </div>
     <div class="field">
     <%= f.label :to_pack, "ADDITIONAL PACKING ITEMS" %><br>
@@ -58,5 +45,4 @@
     <%= f.submit "ADD TO JOURNAL" %>
   </div>
 <% end %>
-
 </div>

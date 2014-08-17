@@ -1,11 +1,10 @@
 class TripsController < ApplicationController
   before_action :set_trip, only: [:show, :edit, :update, :destroy]
-  respond_to :html, :json # added for AJAX
+  respond_to :html, :json 
 
   # GET /trips
   # GET /trips.json
   def index
-    # @trips = Trip.all
     @trips = Trip.find(:all)
     @date = params[:month] ? Date.parse(params[:month]) : Date.today
     redirect_to root_url
@@ -22,11 +21,6 @@ class TripsController < ApplicationController
   # GET /trips/new
   def new
     redirect_to root_url
-    # if logged_in?
-    #   @trip = Trip.new # this was original - the method was added
-    # else
-    #   redirect_to root_url, :flash => { :error => "Make sure you're logged in!!" }
-    # end
   end
 
   # GET /trips/1/edit

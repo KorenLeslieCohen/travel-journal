@@ -1,39 +1,17 @@
-
 <center>
   <div id="index-cover" class="index-cover">
-<div id="none">
-<p><span>.</span></p>
-</div>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br>
+    <div id="none">
+      <p><span>.</span></p>
+    </div>
     <h1>My Travel Journal</h1>
-    <br><br>
-    <br><br>
-    <br>
     <h3>"We wander for distraction but we travel for fulfillment."</h3>
-    <br><br>
-    <br><br>
-    <br><br>
-
     <% if !current_user %>
       <a href="/auth/facebook"><%= image_tag "facebook.png", width: "200"%></a>
-      <% else %>
+    <% else %>
       <p><%= link_to "Welcome back, #{current_user.name.split(" ")[0]}!", current_user %></p>
       <p>Happy travels!</p>
     <% end %>
-     </div>
-<!-- <div class="divider">
-<h1>sadasd</h1>
-</div>   --> 
-
-<!-- SECOND SECTION  -->
-<!-- <div class="index-description">
-<center> -->
-<!-- <div class="user-trips"> -->
-<!-- 
-
-<p id="notice"><%#= notice %></p> -->
+  </div>
+</center>
 
 

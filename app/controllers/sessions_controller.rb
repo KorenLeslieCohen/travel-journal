@@ -7,13 +7,9 @@ class SessionsController < ApplicationController
     redirect_to current_user, :notice => "Congrats, you're logged in!" 
   end
 
-  # def new 
-  #   session[:return_to] = request.referer
-  # end
-
   def destroy
     session[:user_id] = nil
-    redirect_to root_url #, :notice => "Signed out!"
+    redirect_to root_url 
   end
 
   protected
