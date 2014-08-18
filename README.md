@@ -4,6 +4,8 @@ My Travel Journal is an application that helps users keep track of their upcomin
 
 <a href="http://mytraveljournal.me" target="_blank"><img src="http://www.korenlc.com/wp-content/uploads/2014/06/mytraveljournal-1024x570.png"></a>
 
+<a href="http://mytraveljournal.me" target="_blank"><img src="http://www.korenlc.com/wp-content/uploads/2014/06/traveljournalform-1024x565.png"></a>
+
 ## Background
 
 This Ruby on Rails application utilizes the Facebook API and OmniAuth gem for login, as well as the Mandrill API to send custom HTML emails to users after a trip is entered. JavaScript accordions and CSS modals hide and render user data. JavaScript calculator helps users estimate trip budget. Datepicker allows users to set trip date directly from calendar. In-line editing allows users to easily add to their trips.
