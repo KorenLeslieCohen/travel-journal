@@ -1,6 +1,6 @@
 # My Travel Journal
 
-My Travel Journal is an application that helps users keep track of their upcoming trips. My Travel Journal also helps users remember what they liked and didn't like about a location upon their return.
+My Travel Journal is a web application that helps users keep track of their upcoming trips. My Travel Journal also helps users remember what they liked and didn't like about a location upon their return.
 
 <a href="http://mytraveljournal.me" target="_blank"><img src="http://www.korenlc.com/wp-content/uploads/2014/06/mytraveljournal-1024x570.png"></a>
 
