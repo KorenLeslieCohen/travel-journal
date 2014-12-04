@@ -1,4 +1,6 @@
 Rails.application.configure do
+  APP_ID = "743063182420393"
+  APP_SECRET = "e8039a47246e4bcae14b0a0e75221d68"
   config.assets.raise_production_errors = true
   # Settings specified here will take precedence over those in config/application.rb.
 
